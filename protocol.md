@@ -1,16 +1,16 @@
 # Title: "Prefrontal Laterality Modulation Through Targeted Auditory Beat Stimulation During Multimodal Cognitive Tasks"  
 
-> Abstract: This study will examines how auditory beat stimulation modulates prefrontal hemispheric asymmetry and autonomic nervous system activity during cognitively demanding tasks. Participants (N=32±6) will perform verbal-logical (left hemisphere dominant) and visual-spatial (right hemisphere dominant) tasks under three conditions: 10Hz binaural beats (440±10Hz), 40Hz monaural amplitude-modulated tones (440Hz carrier), and nature sound controls. Prefrontal beta-gamma asymmetry indices will be calculated from 4-channel EEG recordings, while autonomic activity will be monitored through heart rate variability (RMSSD) and electrodermal phasic responses. 
+> Abstract: This study will examines how auditory beat stimulation modulates prefrontal hemispheric asymmetry and autonomic nervous system activity during cognitively demanding tasks. Participants (N=30±5) will perform verbal-logical (left hemisphere dominant) and visual-spatial (right hemisphere dominant) tasks under three conditions: 10Hz binaural beats (440±10Hz), 40Hz monaural amplitude-modulated tones (440Hz carrier), and nature sound controls. Prefrontal beta-gamma asymmetry indices will be calculated from 4-channel EEG recordings, while autonomic activity will be monitored through heart rate variability (RMSSD) and electrodermal phasic responses. 
 
 `Keywords: Steady-state Multisensory, Auditory Stimuli, Brain Lateralization, Physiological Responses, Cognitive Tasks`
 
 
 ## Experimental Protocol
 ## Section 1: Cognitive Task Design [1][3]  
-### 1.1 Dual-Modality Challenge (32 mins total)  
+### 1.1 Dual-Modality Challenge (35 mins total)  
 **A. Verbal-Semantic Processing (Left Hemisphere Engagement)**  
 - **Auditory Text Analysis** (8 mins/condition)  
-  - Listen to 75-word technical passages (70 dB SPL) via Galaxy Buds  
+  - Listen to 75-word technical passages (70 dB SPL(Sound Pressure Level)) via Galaxy Buds  
   - Simultaneously identify semantic inconsistencies (e.g., "A square has five sides")  
   - Response method: Verbal corrections recorded via HyperX mic (NVIDIA noise suppression)  
 
@@ -20,7 +20,7 @@
   - Embedded visual puzzles require 45°-315° mental rotations  
   - Performance metric: Rotation angle vs response time slope  
 
-**C. Cross-Modal Integration** (6 mins/condition)  
+**C. Cross-Modal Integration** (8 mins/condition)  
 - **Audio-Visual Binding Task**  
   - Match spoken word descriptors ("spiked," "rotating") to abstract figures  
   - Inhibit mismatched pairings using forced-choice paradigm  
@@ -55,20 +55,20 @@
 | Phase               | Duration | Auditory Condition   | Task Component       |  
 |---------------------|----------|-----------------------|----------------------|  
 | Baseline Recording  | 5 mins   | None                  | Resting eyes-open    |  
-| Condition A         | 10 mins  | 10Hz Binaural         | Visuospatial + Verbal|  
+| Condition A         | 8 mins  | 10Hz Binaural         | Visuospatial + Verbal|  
 | Washout             | 3 mins   | Pink noise (60dBA)    | Fixation cross       |  
-| Condition B         | 10 mins  | 40Hz Monaural AM      | Verbal + Integration |  
+| Condition B         | 8 mins  | 40Hz Monaural AM      | Verbal + Integration |  
 | Washout             | 3 mins   | Pink noise (60dBA)    | Fixation cross       |  
-| Condition C         | 10 mins  | Nature Sounds         | Integration + Spatial|  
+| Condition C         | 8 mins  | Nature Sounds         | Integration + Spatial|  
 
 ## Section 4: Control Protocol (Per [3] Methodological Standards)  
 ### 4.1 Environmental Controls  
 - **Acoustic Isolation**  
-  - Double-walled chamber (60dB noise reduction)  
+  - Double-walled Nextroom lab  
   - Galaxy Buds passive isolation: 23dB SNR (measured via GRAS 45CA)  
 
 - **Physiological Constants**  
-  - Ambient light: 500 lux ±5% (LED panels, 6500K CCT)  
+  - Ambient light: LED panels 
   - Temperature: 22°C ±0.5°C (HVAC-controlled)  
 
 ### 4.2 Counterbalancing Matrix  
@@ -95,7 +95,6 @@
    - ASI formula validated against[3] laterality index methods  
    - Beta/gamma focus matches Muse S sensor capabilities [1]  
 
-This protocol integrates consumer devices into laboratory-grade neuroscience research while maintaining ecological validity. The 35-minute core duration prevents circadian interference (per [1] 30-minute threshold) while capturing transient entrainment effects.
 
 ## Citations:
 
