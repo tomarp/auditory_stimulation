@@ -1,16 +1,27 @@
 # Title: "Prefrontal Laterality Modulation Through Targeted Auditory Beat Stimulation During Multimodal Cognitive Tasks"  
 
-> Abstract: This study will examines how auditory beat stimulation modulates prefrontal hemispheric asymmetry and autonomic nervous system activity during cognitively demanding tasks. Participants (N=30±5) will perform verbal-logical (left hemisphere dominant) and visual-spatial (right hemisphere dominant) tasks under three conditions: 10Hz binaural beats (440±10Hz), 40Hz monaural amplitude-modulated tones (440Hz carrier), and nature sound controls. Prefrontal beta-gamma asymmetry indices will be calculated from 4-channel EEG recordings, while autonomic activity will be monitored through heart rate variability (RMSSD) and electrodermal phasic responses. 
+**Abstract**  
+This study investigates how auditory beat stimulation modulates prefrontal hemispheric asymmetry and autonomic nervous system activity during cognitively demanding tasks under different lighting conditions. Participants (N=30) will perform verbal-logical (left hemisphere dominant) and visual-spatial (right hemisphere dominant) tasks under two auditory conditions: 10Hz binaural beats (440±10Hz) and 40Hz monaural amplitude-modulated tones (440Hz carrier), each paired in two groups Group-A: Red with 10Hz & 40Hz auditory condiitons; Group-B: Green with 10Hz & 40Hz auditory conditions. Red light therapy has been shown to enhance cognitive function by improving mitochondrial activity, increasing ATP production, and enhancing regional cerebral blood flow, which may benefit tasks requiring attention and memory[a][b][c]. Additionally, red light has been linked to improved executive function and memory in patients with traumatic brain injuries[b][d]. While the effects of green light on cognition are less documented, it is hypothesized to promote visual attention and potentially improve cognitive performance in tasks requiring logical abilities. Prefrontal beta-gamma asymmetry indices will be calculated from 4-channel EEG recordings, while autonomic activity will be monitored through heart rate variability (RMSSD) and electrodermal phasic responses. This study aims to elucidate how the combination of auditory stimulation and lighting conditions influences cognitive task performance and physiological responses.
 
-`Keywords: Steady-state Multisensory, Auditory Stimuli, Brain Lateralization, Physiological Responses, Cognitive Tasks`
+
+#### **Abstract References**  
+- **Red Light Effects**: Red light therapy enhances cognitive function by improving mitochondrial activity, increasing ATP production, and enhancing regional cerebral blood flow, benefiting tasks requiring attention and memory[a][b][c]. It also improves executive function and memory in patients with traumatic brain injuries[b][d].  
+- **Green Light Effects**: Although less documented, green light is hypothesized to promote visual attention and potentially improve cognitive performance in logical tasks.  
+- **Auditory Stimulation**: The study examines the effects of 10Hz binaural beats and 40Hz monaural AM tones on hemispheric asymmetry and autonomic activity.  
+- **Physiological Measures**: EEG and autonomic measures (RMSSD, EDA) are used to assess physiological responses during tasks.
+- - **Physiological Measures**: EEG and autonomic measures (RMSSD, EDA) are used to assess physiological responses during tasks[e][f].  
+- **Cognitive Modulation**: Auditory beat stimulation can modulate cognitive processes and mood states[g].
+
+
+`Keywords: Auditory Stimuli, Brain Lateralization, Physiological Responses, Cognitive Tasks, Multisensory, Multidomain`
 
 
 ## Experimental Protocol
 ## Section 1: Cognitive Task Design [1][3]  
-### 1.1 Dual-Modality Challenge (35 mins total)  
+### 1.1 Dual-Modality Challenge (36 mins total)  
 **A. Verbal-Semantic Processing (Left Hemisphere Engagement)**  
 - **Auditory Text Analysis** (8 mins/condition)  
-  - Listen to 75-word technical passages (70 dB SPL(Sound Pressure Level)) via Galaxy Buds  
+  - Listen to text passages (70 dB SPL(Sound Pressure Level)) via earphone Buds  
   - Simultaneously identify semantic inconsistencies (e.g., "A square has five sides")  
   - Response method: Verbal corrections recorded via HyperX mic (NVIDIA noise suppression)  
 
@@ -20,21 +31,21 @@
   - Embedded visual puzzles require 45°-315° mental rotations  
   - Performance metric: Rotation angle vs response time slope  
 
-**C. Cross-Modal Integration** (8 mins/condition)  
+<!-- **C. Cross-Modal Integration** (8 mins/condition)  
 - **Audio-Visual Binding Task**  
   - Match spoken word descriptors ("spiked," "rotating") to abstract figures  
-  - Inhibit mismatched pairings using forced-choice paradigm  
+  - Inhibit mismatched pairings using forced-choice paradigm   -->
 
 ## Section 2: Auditory Stimulation Protocol [1][2][3]
 ### 2.1 Beat Generation Parameters  
 | Condition               | Specification                          | Neurological Basis[1][3]               |  
-|-------------------------|----------------------------------------|------------------------------------------|  
+|-------------------------|----------------------------------------|----------------------------------------|  
 | 10Hz Binaural Beats     | 440Hz ±10Hz (L/R phase offset)         | Right prefrontal beta enhancement[1]   |  
-| 40Hz Monaural AM Tones  | 440Hz carrier, 40Hz AM depth 80%       | Left temporal gamma entrainment[2][3]   |  
-| Nature Sounds           | 1/f noise spectrum with 4Hz modulation | Bilateral alpha synchronization[1]     |  
+| 40Hz Monaural AM Tones  | 440Hz carrier, 40Hz AM depth 80%       | Left temporal gamma entrainment[2][3]  |  
+<!-- | Nature Sounds           | 1/f noise spectrum with 4Hz modulation | Bilateral alpha synchronization[1]     |   -->
 
 ### 2.2 Stimulus Delivery Protocol  
-- **Galaxy Buds Pro Configuration**  
+- **Galaxy Buds Pro Earphones**  
   - Binaural beats: Phase-locked delivery (0° left, 180° right initialization)  
   - Monaural AM: Right ear only (left channel muted) to enhance left hemisphere focus  
   - Stimulus ramping: 500ms cosine-squared onset/offset  
@@ -52,14 +63,23 @@
   - HRV Analysis: RMSSD in 128s windows (matched to task epochs)  
 
 ### 3.2 Experimental Timeline  
-| Phase               | Duration | Auditory Condition   | Task Component       |  
-|---------------------|----------|-----------------------|----------------------|  
+| Phase               | Duration | Auditory Condition    | Task Component       |  
+|---------------------|----------|-----------------------|----------------------|
+| Acclimation Time    | 5 Mins   | None                  | General Survey       | 
 | Baseline Recording  | 5 mins   | None                  | Resting eyes-open    |  
-| Condition A         | 8 mins  | 10Hz Binaural         | Visuospatial + Verbal|  
-| Washout             | 3 mins   | Pink noise (60dBA)    | Fixation cross       |  
-| Condition B         | 8 mins  | 40Hz Monaural AM      | Verbal + Integration |  
-| Washout             | 3 mins   | Pink noise (60dBA)    | Fixation cross       |  
-| Condition C         | 8 mins  | Nature Sounds         | Integration + Spatial|  
+| Condition 1         | 10 mins  | 10Hz Binaural         | Visuospatial + Verbal|  
+| Washout             | 3 mins   | Pink noise (60dBA)    | Experiment Survey    |  
+| Condition 2         | 10 mins  | 40Hz Monaural AM      | Verbal + Integration |  
+| Washout             | 3 mins   | Pink noise (60dBA)    | Experiment Survey    |  
+<!-- | Condition C         | 8 mins   | Nature Sounds         | Integration + Spatial|   -->
+
+> **Group A:** <br>
+  Condition_1 = RedLED 10Hz (L1A1) + Task1,2 (T1,2) <br>
+  Condition_2 = RedLED 40Hz (L1A2) + Task1,2 (T1,2)
+
+> **Group B:** <br>
+  Condition_1 = GreenLED 10Hz (L2A1) + Task1,2 (T1,2) <br>
+  Condition_2 = GreenLED 40Hz (L2A2) + Task1,2 (T1,2)
 
 ## Section 4: Control Protocol (Per [3] Methodological Standards)  
 ### 4.1 Environmental Controls  
@@ -68,19 +88,20 @@
   - Galaxy Buds passive isolation: 23dB SNR (measured via GRAS 45CA)  
 
 - **Physiological Constants**  
-  - Ambient light: LED panels 
-  - Temperature: 22°C ±0.5°C (HVAC-controlled)  
+  - Ambient light: LED panels + Red light
+  - Ambient light: LED panels + Green light
+  - Temperature: Normal conditions ~22±0.5°C (HVAC-controlled)  
 
-### 4.2 Counterbalancing Matrix  
+<!-- ### 4.2 Counterbalancing Matrix  
 | Group | Order                  | Beat Polarization    |  
 |-------|------------------------|----------------------|  
 | 1     | Binaural→AM→Nature     | Right→Left→Bilateral |  
 | 2     | AM→Nature→Binaural     | Left→Bilateral→Right |  
-| 3     | Nature→Binaural→AM     | Bilateral→Right→Left |  
+| 3     | Nature→Binaural→AM     | Bilateral→Right→Left |   -->
 
 ## Technical Validation
 1. **10Hz Binaural Effects**  
-   - Right prefrontal beta enhancement aligns with[1] findings of 10Hz beat-induced right temporal activation  
+   - Right prefrontal beta enhancement aligns with [1] findings of 10Hz beat-induced right temporal activation  
    - Phase offset (0° vs 180°) matches interaural time difference requirements from [3]  
 
 2. **40Hz Monaural Design**  
@@ -88,15 +109,22 @@
    - Right-ear delivery leverages left hemisphere auditory pathway dominance [3]  
 
 3. **Task Synchronization**  
-   - 8-min blocks allow sufficient entrainment time per [1] theta wave observations  
+   - 10-min blocks allow sufficient entrainment time per [1] theta wave observations  
    - ISI jitter prevents rhythmic expectation artifacts [3]  
 
 4. **Asymmetry Quantification**  
-   - ASI formula validated against[3] laterality index methods  
+   - ASI formula validated against [3] laterality index methods  
    - Beta/gamma focus matches Muse S sensor capabilities [1]  
 
 
 ## Citations:
+[a] https://researchoutreach.org/articles/light-therapy-improves-cognitive-function-after-traumatic-brain/ <br>
+[b] https://pmc.ncbi.nlm.nih.gov/articles/PMC4043367/ <br>
+[c] https://lightlounge.life/about/blog?post=improve-cognitive-function <br>
+[d] https://occupationaltherapybrisbane.com.au/red-light-therapy-for-brain-health/  <br>
+[e] https://eprints.soton.ac.uk/488356/1/1-s2.0-S0167876024000321-main.pdf  <br>
+[f] https://www.mdpi.com/2076-3425/14/2/131 <br>
+[g] https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2015.00070/full  <br>
 
 [1] https://pmc.ncbi.nlm.nih.gov/articles/PMC11367212/ <br>
 [2] https://pmc.ncbi.nlm.nih.gov/articles/PMC8832987/ <br>
