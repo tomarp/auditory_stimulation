@@ -14,22 +14,106 @@ This study investigates how auditory beat stimulation modulates prefrontal hemis
 
 
 `Keywords: Auditory Stimuli, Brain Lateralization, Physiological Responses, Cognitive Tasks, Multisensory, Multidomain`
-
+---
 
 ## Experimental Protocol
 ## Section 1: Cognitive Task Design [1][3]  
-### 1.1 Dual-Modality Challenge (36 mins total)  
+### 1.1 Dual-Modality Challenge (10+10 mins)  
 **A. Verbal-Semantic Processing (Left Hemisphere Engagement)**  
-- **Auditory Text Analysis** (8 mins/condition)  
-  - Listen to text passages (70 dB SPL(Sound Pressure Level)) via earphone Buds  
-  - Simultaneously identify semantic inconsistencies (e.g., "A square has five sides")  
-  - Response method: Verbal corrections recorded via HyperX mic (NVIDIA noise suppression)  
+- **Auditory Text Analysis** (10 mins)   
+
+**Task Description:** Participants will listen to text passages via earphone Buds (70 dB SPL) and identify semantic inconsistencies. The task requires participants to determine if a statement is logically and semantically correct. Based on statement, participants will choose correction option on the screen and state out loud the statement.
+
+**Instructions to Participants:** You will hear a series of sentences. Your task is to listen carefully and identify whether each sentence makes sense or if there is a semantic inconsistency (i.e., something that doesn’t logically fit). If you find an inconsistency, please choose correction option on the screen based on what correction should be made and state out loud the statement. **Response Method:** You will record your verbal responses using a HyperX microphone (with NVIDIA noise suppression). Please speak clearly into the mic when providing your corrections.
+
+**Example of Semantically Incorrect Statement:**
+- "A square has five sides."  
+**Correct answer:** "A square has **four** sides." Your action should be choose the correct option and speak the corrected statement.
+
+**Audio Text Passages for Task:**
+
+1. **Passage 1:**
+   - "The sun rises in the west."
+   - **Correct answer:** "The sun rises in the east."
+   
+2. **Passage 2:**
+   - "A triangle has three sides."
+   - **Correct answer:** "A triangle has three sides." (no correction needed)
+
+3. **Passage 3:**
+   - "Water boils at 50°C."
+   - **Correct answer:** "Water boils at 100°C."
+
+4. **Passage 4:**
+   - "An octagon has eight sides."
+   - **Correct answer:** "An octagon has eight sides." (no correction needed)
+
+5. **Passage 5:**
+   - "All birds can swim."
+   - **Correct answer:** "Not all birds can swim."
+
+6. **Passage 6:**
+   - "The Eiffel Tower is located in London."
+   - **Correct answer:** "The Eiffel Tower is located in Paris."
+
+7. **Passage 7:**
+   - "A cat is a type of bird."
+   - **Correct answer:** "A cat is a mammal."
+
+8. **Passage 8:**
+   - "The Earth is flat."
+   - **Correct answer:** "The Earth is round."
+---
 
 **B. Visuospatial Manipulation (Right Hemisphere Engagement)**  
-- **3D Mental Rotation Task** (8 mins/condition)  
+- **3D Mental Rotation Task** (10 mins)  
   - Judge mirrored/non-mirrored pairs of Necker cubes  
   - Embedded visual puzzles require 45°-315° mental rotations  
   - Performance metric: Rotation angle vs response time slope  
+
+**Task Description:** Participants will view pairs of 3D Necker cubes and decide whether each pair shows a mirrored or non-mirrored configuration. The task involves mentally rotating the 3D shapes at different angles (from 45° to 315°) to assess their orientation.
+
+**Instructions to Participants:** You will be shown pairs of images, each containing a 3D Necker cube. For each pair, please determine whether the two cubes are mirrored versions of each other or not. Your task is to mentally rotate the cubes and decide if the orientation is the same or if they are mirror images of each other.
+
+**Example:**
+- **Image Pair 1 (Mirrored Necker Cubes):** (Cubes shown with mirrored orientation). **Response:** "These cubes are mirrored."
+- **Image Pair 2 (Non-Mirrored Necker Cubes):** (Cubes shown with different orientations, not mirrored)  **Response:** "These cubes are not mirrored."
+
+**Visual Stimuli for Task:**
+
+1. **Image Pair 1:**
+   - Necker Cube A (45° rotation)
+   - Necker Cube B (Mirrored version)
+   - Response: "These cubes are mirrored."
+
+2. **Image Pair 2:**
+   - Necker Cube A (90° rotation)
+   - Necker Cube B (Non-mirrored)
+   - Response: "These cubes are not mirrored."
+
+3. **Image Pair 3:**
+   - Necker Cube A (180° rotation)
+   - Necker Cube B (Mirrored version)
+   - Response: "These cubes are mirrored."
+
+4. **Image Pair 4:**
+   - Necker Cube A (270° rotation)
+   - Necker Cube B (Non-mirrored)
+   - Response: "These cubes are not mirrored."
+
+5. **Image Pair 5:**
+   - Necker Cube A (315° rotation)
+   - Necker Cube B (Mirrored version)
+   - Response: "These cubes are mirrored."
+
+6. **Image Pair 6:**
+   - Necker Cube A (135° rotation)
+   - Necker Cube B (Non-mirrored)
+   - Response: "These cubes are not mirrored."
+
+#### **Performance Metric:**
+- **Rotation Angle vs. Response Time**: The time it takes you to correctly determine if the cubes are mirrored or not will be measured and compared to the rotation angle of the cubes.
+
 
 <!-- **C. Cross-Modal Integration** (8 mins/condition)  
 - **Audio-Visual Binding Task**  
@@ -67,19 +151,20 @@ This study investigates how auditory beat stimulation modulates prefrontal hemis
 |---------------------|----------|-----------------------|----------------------|
 | Acclimation Time    | 5 Mins   | None                  | General Survey       | 
 | Baseline Recording  | 5 mins   | None                  | Resting eyes-open    |  
-| Condition 1         | 10 mins  | 10Hz Binaural         | Visuospatial + Verbal|  
+| Condition 1         | 10 mins  | 10Hz Binaural         | Verbal-Semantic      |  
 | Washout             | 3 mins   | Pink noise (60dBA)    | Experiment Survey    |  
-| Condition 2         | 10 mins  | 40Hz Monaural AM      | Verbal + Integration |  
+| Condition 2         | 10 mins  | 40Hz Monaural AM      | Visuospatial         |  
 | Washout             | 3 mins   | Pink noise (60dBA)    | Experiment Survey    |  
 <!-- | Condition C         | 8 mins   | Nature Sounds         | Integration + Spatial|   -->
 
+
 > **Group A:** <br>
-  Condition_1 = RedLED 10Hz (L1A1) + Task1,2 (T1,2) <br>
-  Condition_2 = RedLED 40Hz (L1A2) + Task1,2 (T1,2)
+  Condition_1 = RedLED$(L_1)$, 10Hz$(A_1)$, Task1,2 $(T_{1,2})$ <br>
+  Condition_2 = RedLED$(L_1)$, 40Hz$(A_2)$, Task1,2 $(T_{1,2})$
 
 > **Group B:** <br>
-  Condition_1 = GreenLED 10Hz (L2A1) + Task1,2 (T1,2) <br>
-  Condition_2 = GreenLED 40Hz (L2A2) + Task1,2 (T1,2)
+  Condition_1 = GreenLED $(L_2)$, 10Hz$(A_1)$, Task1,2 $(T_{1,2})$ <br>
+  Condition_2 = GreenLED$(L_2)$, 40Hz$(A_2)$, Task1,2 $(T_{1,2})$
 
 ## Section 4: Control Protocol (Per [3] Methodological Standards)  
 ### 4.1 Environmental Controls  
