@@ -159,12 +159,12 @@ This study investigates how auditory beat stimulation modulates prefrontal hemis
 
 
 > **Group A:** <br>
-  Condition_1 = RedLED$(L_1)$, 10Hz$(A_1)$, Task1,2 $(T_{1,2})$ <br>
-  Condition_2 = RedLED$(L_1)$, 40Hz$(A_2)$, Task1,2 $(T_{1,2})$
+  Condition_1 $(C_1)$ = RedLED$(L_1)$, 10Hz$(A_1)$, Task1,2 $(T_{1,2})$ <br>
+  Condition_2 $(C_2)$ = RedLED$(L_1)$, 40Hz$(A_2)$, Task1,2 $(T_{1,2})$
 
 > **Group B:** <br>
-  Condition_1 = GreenLED $(L_2)$, 10Hz$(A_1)$, Task1,2 $(T_{1,2})$ <br>
-  Condition_2 = GreenLED$(L_2)$, 40Hz$(A_2)$, Task1,2 $(T_{1,2})$
+  Condition_1 $(C_1)$ = GreenLED $(L_2)$, 10Hz$(A_1)$, Task1,2 $(T_{1,2})$ <br>
+  Condition_2 $(C_2)$ = GreenLED$(L_2)$, 40Hz$(A_2)$, Task1,2 $(T_{1,2})$
 
 ## Section 4: Control Protocol (Per [3] Methodological Standards)  
 ### 4.1 Environmental Controls  
