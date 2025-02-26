@@ -25,22 +25,25 @@
             padding: 20px;
         }
         h1 {
+            font-size: 6rem;
+            margin-bottom: 20px;
+        }
+        h2 {
             font-size: 3rem;
             margin-bottom: 20px;
         }
         p, label {
-            font-size: 1.5rem;
-        }
-        .timer {
-            margin-top: 30px;
             font-size: 2rem;
         }
         img {
-            width: 1600px;
+            width: 1800px;
             height: auto;
             margin: 30px;
             border-radius: 20px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+        }
+        audio {
+            margin: 20px;
         }
         .options input {
             margin: 10px;
@@ -60,6 +63,38 @@
         button:hover {
             background-color: #333333;
         }
+        .timer-container {
+            position: fixed;
+            top: 20px;          /* Distance from top */
+            right: 20px;        /* Distance from right */
+            width: 150px;
+            height: 150px;
+            z-index: 1000;      /* Ensures it stays on top */
+        }
+        .timer-svg {
+            transform: rotate(-90deg);
+        }
+        .timer-circle-bg {
+            fill: none;
+            stroke: #333;
+            stroke-width: 10;
+        }
+        .timer-circle {
+            fill: none;
+            stroke: #00e676;
+            stroke-width: 10;
+            stroke-linecap: round;
+            stroke-dasharray: 440;
+            stroke-dashoffset: 440;
+            transition: stroke-dashoffset 1s linear;
+        }
+        .timer-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2rem;
+        }
     </style>
 </head>
 <body>
@@ -68,25 +103,40 @@
     <script>
         /**
          * Instructions:
-         * 1. To add local puzzle images, place the images in the same directory as this HTML file.
-         * 2. Update the `imagePages` array with the local image file names and desired timer durations (in seconds).
+         * 1. To add local puzzle images, place the images in the same directory as this HTML file and update `imagePages`.
+         * 2. To add an audio file for Task 2, place it in the same directory and update `audioFile` variable.
+         * 3. To adjust timings, modify the `time` attribute for each page.
+         * 4. Experimental survey URLs can be updated directly in the corresponding iframe section.
          */
 
         const imagePages = [
-            { src: "tasks/Dog-optical-illusion-748497.jpg", time: 10 },
-            { src: "tasks/hm5ZyVyLzFeNUUQSa9XV8g-650-80.jpg.webp", time: 10 },
-            { src: "tasks/OpticalIllusionIQTestHowmanyAnimalscanyouspot.webp", time: 10 },
-            { src: 'puzzle4.png', time: 10 }
+            { src: "tasks/Dog-optical-illusion-748497.jpg", time: 5 },
+            { src: "tasks/hm5ZyVyLzFeNUUQSa9XV8g-650-80.jpg.webp", time: 5 },
+            { src: "tasks/OpticalIllusionIQTestHowmanyAnimalscanyouspot.webp", time: 5 },
+            { src: 'puzzle4.png', time: 5 }
         ];
 
+        const audioFile = 'task2-audio.mp3'; // Update with your local audio file name
+
         const pages = [
-            { content: `<h1>Welcome to the Experiment</h1><p>Please follow the instructions carefully as you proceed.</p><div class="navigation"><button onclick="nextPage()">Start</button></div>`, time: null },
-            { content: `<h1>Instruction</h1><p>Please complete the general survey on the next page.</p><div class="timer" id="timer"></div>`, time: 5 },
-            { content: `<h1>General Survey</h1><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfwXS4vgz9DYN5cqy4TK3xe8BmVqNFEnBwxdL2pHy8rB0-Xxw/viewform?embedded=true" width="100%" height="100%">Loading…</iframe><div class="timer" id="timer"></div>`, time: 5 },
-            { content: `<h1>Instruction</h1><p>Next, you will see puzzle images. Each image will be shown on a separate page with options to choose.</p><div class="timer" id="timer"></div>`, time: 5 },
+            { content: `<h1>Welcome to the Experiment</h1><h2>Please follow the instructions carefully as you proceed.</h2><div class="navigation"><button onclick="nextPage()">Start</button></div>`, time: null },
+            { content: `<h2>Instruction</h2><p>Please complete the general survey on the next page.</p>${timerTemplate()}`, time: 5 },
+            { content: `<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfwXS4vgz9DYN5cqy4TK3xe8BmVqNFEnBwxdL2pHy8rB0-Xxw/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>${timerTemplate()}`, time: 5 },
+            { content: `<h2>Task 1: Verbal-Semantic Analysis</h2><p>Listen to the audio passage and select the answer on the screen.</p><audio controls><source src="${audioFile}" type="audio/mpeg">Your browser does not support the audio element.</audio>
+                    <div class="options">
+                        <label><input type="radio" name="audioQ"> Option A</label>
+                        <label><input type="radio" name="audioQ"> Option B</label>
+                        <label><input type="radio" name="audioQ"> Option C</label>
+                        <label><input type="radio" name="audioQ"> Option D</label>
+                    </div>${timerTemplate()}`, time: 5 },
+            
+            // Experimental Survey (Post Task 1):
+            { content: `<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSclo1hFxkItDj6Mgz93Ai8P3pKJPMrHB_nL068SWcHgO26UBQ/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>${timerTemplate()}`, time: 5 },
+            
+            { content: `<h2>Task 2: Visuospatial</h2><p>Instruction: Next, you will see images in next few slides. Please follow the instruction in the image section and select correct option.</p>${timerTemplate()}`, time: 5 },
             ...imagePages.map((img, i) => ({
                 content: `
-                    <h1>Puzzle Image ${i + 1}</h1>
+                    <h2>Puzzle Image ${i + 1}</h2>
                     <img src="${img.src}" alt="Puzzle ${i + 1}">
                     <div class="options">
                         <label><input type="radio" name="img${i + 1}"> Option A</label>
@@ -94,16 +144,30 @@
                         <label><input type="radio" name="img${i + 1}"> Option C</label>
                         <label><input type="radio" name="img${i + 1}"> Option D</label>
                     </div>
-                    <div class="timer" id="timer"></div>
+                    ${timerTemplate()}
                 `,
                 time: img.time
             })),
-            { content: `<h1>Thank You!</h1><p>Thank you for participating in the experiment.</p>`, time: null }
+            // Experimental Survey (Post Task 2):
+            { content: `<h1></h1><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSclo1hFxkItDj6Mgz93Ai8P3pKJPMrHB_nL068SWcHgO26UBQ/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>${timerTemplate()}`, time: 5 },
+            { content: `<h1>Thank you so much for participating in the experiment.</h1><h2>We really appreciate your contribution to our research.</h2>`, time: null }
         ];
 
         let currentPage = 0;
         const container = document.getElementById("page-container");
         let timerInterval;
+
+        function timerTemplate() {
+            return `
+                <div class="timer-container">
+                    <svg class="timer-svg" width="150" height="150">
+                        <circle class="timer-circle-bg" cx="75" cy="75" r="70"></circle>
+                        <circle class="timer-circle" cx="75" cy="75" r="70"></circle>
+                    </svg>
+                    <div class="timer-text" id="timer">0s</div>
+                </div>
+            `;
+        }
 
         function loadPage(index) {
             clearInterval(timerInterval);
@@ -120,11 +184,20 @@
 
         function startTimer(seconds) {
             const timerElement = document.getElementById("timer");
-            timerElement.textContent = `Time Remaining: ${seconds}s`;
+            const progressCircle = document.querySelector(".timer-circle");
+            const totalLength = progressCircle.getTotalLength();
+            progressCircle.style.strokeDasharray = totalLength;
+            progressCircle.style.strokeDashoffset = totalLength;
+
+            let remaining = seconds;
+            timerElement.textContent = `${remaining}s`;
+
             timerInterval = setInterval(() => {
-                seconds--;
-                timerElement.textContent = `Time Remaining: ${seconds}s`;
-                if (seconds <= 0) {
+                remaining--;
+                timerElement.textContent = `${remaining}s`;
+                const progress = totalLength * (remaining / seconds);
+                progressCircle.style.strokeDashoffset = progress;
+                if (remaining <= 0) {
                     clearInterval(timerInterval);
                     nextPage();
                 }
