@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Form with Timer</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    iframe {
+      width: 100%;
+      height: calc(100vh - 50px);
+      border: none;
+    }
+    .bottom-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 50px;
+      background-color: #333;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+    }
+  </style>
+  <script>
+    let timerDuration = 5; // Timer duration in seconds
+
+    function startTimer() {
+      const timerElement = document.getElementById('timer');
+      const countdown = setInterval(() => {
+        const minutes = Math.floor(timerDuration / 60);
+        const seconds = timerDuration % 60;
+        timerElement.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+        if (timerDuration === 0) {
+          clearInterval(countdown);
+          window.location.href = 'step1.html'; 
+        }
+        timerDuration--;
+      }, 1000);
+    }
+
+    window.onload = startTimer;
+  </script>
+</head>
+<body>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe0kn6RKYzq2y_ryfveFw48BXMsWlc2Ta6oDN8NcNcxur6evQ/viewform?embedded=true" width="640" height="358" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>  <div class="bottom-bar">
+    Time Remaining: <span id="timer">:10</span>
+  </div>
+</body>
+</html>

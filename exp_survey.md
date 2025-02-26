@@ -4,7 +4,7 @@
 ---
 
 ### **Section 1: Task Performance and Difficulty**  
-1. **How would you rate the difficulty of the verbal/logical task?**  
+1. **How would you rate the difficulty of the Verbal-Semantic task?**  
    - Scale:  
      - 1: Very Easy  
      - 2: Somewhat Easy  
@@ -17,7 +17,7 @@
      - 9: Almost Impossible  
    - **Reference**: The 9-point Likert scale used in cognitive load research.  
 
-2. **How would you rate the difficulty of the visual-spatial task?**  
+2. **How would you rate the difficulty of the Visuospatial task?**  
    - Scale:  
      - 1: Very Easy  
      - 2: Somewhat Easy  
@@ -127,7 +127,7 @@
 
 ---
 
-### **Section 4: Right here-right now Multi-domain Survey**
+### **Section 4: Right-here Right-now Multi-domain Survey**
 ### **Thermal**
 1. **What is your thermal sensation?**
    - Scale:
@@ -186,18 +186,18 @@
  2. **How satisfied are you with the light condition?**
   - Scale
     - 1: Very dissatisfied 
-    - 2. Dissatisfied 
-    - 3. Neutral 
-    - 4. Satisfied 
-    - 5. Very satisfied 
+    - 2: Dissatisfied 
+    - 3: Neutral 
+    - 4: Satisfied 
+    - 5: Very satisfied 
 
  3.  **Would you prefer the lighting condition to be**
   - Scale
-    - 1. Brighter 
-    - 2. Without change 
-    - 3. Dimmer 
+    - 1: Brighter 
+    - 2: Without change 
+    - 3: Dimmer 
 
-## **Visual**
+## **Acoustics**
 1. **How do you assess the acoustics of the room?**
   - Scale
     - 1: Very noisy 
@@ -211,8 +211,8 @@
     - 1: Very dissatisfied 
     - 2: Dissatisfied 
     - 3: Neutral 
-    - 4. Satisfied 
-    - 5. Very satisfied 
+    - 4: Satisfied 
+    - 5: Very satisfied 
 
  3. **Hould you prefer the acoustic environment to be…**
   - Scale
