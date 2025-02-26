@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment Sequence</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #121212;
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+        }
+        .container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        p, label {
+            font-size: 1.5rem;
+        }
+        .timer {
+            margin-top: 30px;
+            font-size: 2rem;
+        }
+        img {
+            width: 1600px;
+            height: auto;
+            margin: 30px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+        }
+        .options input {
+            margin: 10px;
+            transform: scale(1.5);
+        }
+        button {
+            padding: 15px 30px;
+            margin: 10px;
+            font-size: 1.5rem;
+            border-radius: 10px;
+            border: none;
+            background-color: #1f1f1f;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #333333;
+        }
+    </style>
+</head>
+<body>
+    <div id="page-container" class="container"></div>
+
+    <script>
+        /**
+         * Instructions:
+         * 1. To add local puzzle images, place the images in the same directory as this HTML file.
+         * 2. Update the `imagePages` array with the local image file names and desired timer durations (in seconds).
+         */
+
+        const imagePages = [
+            { src: "tasks/Dog-optical-illusion-748497.jpg", time: 10 },
+            { src: "tasks/hm5ZyVyLzFeNUUQSa9XV8g-650-80.jpg.webp", time: 10 },
+            { src: "tasks/OpticalIllusionIQTestHowmanyAnimalscanyouspot.webp", time: 10 },
+            { src: 'puzzle4.png', time: 10 }
+        ];
+
+        const pages = [
+            { content: `<h1>Welcome to the Experiment</h1><p>Please follow the instructions carefully as you proceed.</p><div class="navigation"><button onclick="nextPage()">Start</button></div>`, time: null },
+            { content: `<h1>Instruction</h1><p>Please complete the general survey on the next page.</p><div class="timer" id="timer"></div>`, time: 5 },
+            { content: `<h1>General Survey</h1><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfwXS4vgz9DYN5cqy4TK3xe8BmVqNFEnBwxdL2pHy8rB0-Xxw/viewform?embedded=true" width="100%" height="100%">Loading…</iframe><div class="timer" id="timer"></div>`, time: 5 },
+            { content: `<h1>Instruction</h1><p>Next, you will see puzzle images. Each image will be shown on a separate page with options to choose.</p><div class="timer" id="timer"></div>`, time: 5 },
+            ...imagePages.map((img, i) => ({
+                content: `
+                    <h1>Puzzle Image ${i + 1}</h1>
+                    <img src="${img.src}" alt="Puzzle ${i + 1}">
+                    <div class="options">
+                        <label><input type="radio" name="img${i + 1}"> Option A</label>
+                        <label><input type="radio" name="img${i + 1}"> Option B</label>
+                        <label><input type="radio" name="img${i + 1}"> Option C</label>
+                        <label><input type="radio" name="img${i + 1}"> Option D</label>
+                    </div>
+                    <div class="timer" id="timer"></div>
+                `,
+                time: img.time
+            })),
+            { content: `<h1>Thank You!</h1><p>Thank you for participating in the experiment.</p>`, time: null }
+        ];
+
+        let currentPage = 0;
+        const container = document.getElementById("page-container");
+        let timerInterval;
+
+        function loadPage(index) {
+            clearInterval(timerInterval);
+            container.innerHTML = pages[index].content;
+            if (pages[index].time) startTimer(pages[index].time);
+        }
+
+        function nextPage() {
+            if (currentPage < pages.length - 1) {
+                currentPage++;
+                loadPage(currentPage);
+            }
+        }
+
+        function startTimer(seconds) {
+            const timerElement = document.getElementById("timer");
+            timerElement.textContent = `Time Remaining: ${seconds}s`;
+            timerInterval = setInterval(() => {
+                seconds--;
+                timerElement.textContent = `Time Remaining: ${seconds}s`;
+                if (seconds <= 0) {
+                    clearInterval(timerInterval);
+                    nextPage();
+                }
+            }, 1000);
+        }
+
+        window.onload = () => loadPage(currentPage);
+    </script>
+</body>
+</html>
