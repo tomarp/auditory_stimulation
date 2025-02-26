@@ -44,7 +44,7 @@
 ---
 
 ### **Section 2: General Experience**  
-1. **How would you rate your overall level of relaxation/alertness during the experiment?**  
+1. **How would you rate your overall level of relaxation/alertness during this session?**  
    - Scale:  
      - 1: Very Relaxed  
      - 2: Somewhat Relaxed  
@@ -57,7 +57,7 @@
      - 9: Almost Fully Alert  
    - **Reference**: The Borg RPE scale, which assesses perceived exertion but can be adapted for relaxation/alertness.  
 
-2. **How would you rate the emotional stability you experienced during the experiment?**  
+2. **How would you rate the emotional stability you experienced during this session?**  
    - Scale:  
      - 1: Very Unstable  
      - 2: Somewhat Unstable  
@@ -86,7 +86,7 @@
 ---
 
 ### **Section 3: Cognitive Load and Emotional State**  
-1. **How would you rate your overall cognitive load during the experiment?**  
+1. **How would you rate your overall cognitive load during this session?**  
    - Scale:  
      - 1: Very Low  
      - 2: Somewhat Low  
@@ -99,7 +99,7 @@
      - 9: Almost Overwhelming  
    - **Reference**: The NASA-TLX scale, focusing on overall cognitive load.  
 
-2. **How would you rate your emotional valence during the experiment?**  
+2. **How would you rate your emotional valence during this session?**  
    - Scale:  
      - 1: Very Unhappy  
      - 2: Somewhat Unhappy  
@@ -112,7 +112,7 @@
      - 9: Almost Completely Happy  
    - **Reference**: The SAM (Self-Assessment Manikin) scale for valence.  
 
-3. **How would you rate your emotional arousal during the experiment?**  
+3. **How would you rate your emotional arousal during this session?**  
    - Scale:  
      - 1: Very Calm  
      - 2: Somewhat Calm  
@@ -124,6 +124,101 @@
      - 8: Extremely Excited  
      - 9: Almost Completely Excited  
    - **Reference**: The SAM (Self-Assessment Manikin) scale for arousal.
+
+---
+
+### **Section 4: Right here-right now Multi-domain Survey**
+### **Thermal**
+1. **What is your thermal sensation?**
+   - Scale:
+     - 1: Cold
+     - 2: Cool
+     - 3: Neutral
+     - 4: Warm
+     - 5: Hot
+
+2. **How satisfied are you with the thermal environment?**
+   - Scale
+     - Very Dissatisfied
+     - Satisfied
+     - Neutral
+     - Satisfied
+     - Very Satisfied
+
+3. **Would you prefer to be:**
+    - Scale
+      - Cooler
+      - Without Change
+      - Warmer
+
+### **Air-Quality**
+1. **Would you prefer**
+  - Scale
+     - 1: Less air movement 
+     - 2: No change
+     - 3: More air movement 
+
+2. **How do you assess the air quality of the room?**
+  - Scale
+    - 1: Very bad 
+    - 2: Bad 
+    - 3: Neutral 
+    - 4: Good 
+    - 5: Very good 
+
+3. **How satisfied are you with the air quality?**
+  - Scale
+    - 1: Very dissatisfied 
+    - 2: Dissatisfied 
+    - 3: Neutral 
+    - 4: Satisfied 
+    - 5: Very satisfied 
+
+## **Visual**
+1. **How do you assess the light environment of the room?**
+  - Scale
+    - 1: Bright 
+    - 2: Slightly bright 
+    - 3: Neutral
+    - 4: Slightly dark
+    - 5: Dark 
+
+ 2. **How satisfied are you with the light condition?**
+  - Scale
+    - 1: Very dissatisfied 
+    - 2. Dissatisfied 
+    - 3. Neutral 
+    - 4. Satisfied 
+    - 5. Very satisfied 
+
+ 3.  **Would you prefer the lighting condition to be**
+  - Scale
+    - 1. Brighter 
+    - 2. Without change 
+    - 3. Dimmer 
+
+## **Visual**
+1. **How do you assess the acoustics of the room?**
+  - Scale
+    - 1: Very noisy 
+    - 2: Noisy 
+    - 3: Neutral 
+    - 4: Quiet 
+    - 5: Very quiet 
+
+ 2. **How satisfied are you with the acoustics?**
+  - Scale
+    - 1: Very dissatisfied 
+    - 2: Dissatisfied 
+    - 3: Neutral 
+    - 4. Satisfied 
+    - 5. Very satisfied 
+
+ 3. **Hould you prefer the acoustic environment to be…**
+  - Scale
+    - 1: Louder 
+    - 2: No change 
+    - 3: Quiter 
 
 ---
 ### **Scales Description**  
