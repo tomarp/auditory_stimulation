@@ -36,7 +36,7 @@
             font-size: 2rem;
         }
         img {
-            width: 1200px;
+            width: 900px;
             height: auto;
             margin: 30px;
             border-radius: 20px;
@@ -65,11 +65,11 @@
         }
         .timer-container {
             position: fixed;
-            top: 20px;          /* Distance from top */
-            right: 20px;        /* Distance from right */
+            top: 20px;
+            right: 20px;
             width: 150px;
             height: 150px;
-            z-index: 1000;      /* Ensures it stays on top */
+            z-index: 1000;
         }
         .timer-svg {
             transform: rotate(-90deg);
@@ -101,60 +101,73 @@
     <div id="page-container" class="container"></div>
 
     <script>
-        /**
-         * Instructions:
-         * 1. To add local puzzle images, place the images in the same directory as this HTML file and update `imagePages`.
-         * 2. To add an audio file for Task 2, place it in the same directory and update `audioFile` variable.
-         * 3. To adjust timings, modify the `time` attribute for each page.
-         * 4. Experimental survey URLs can be updated directly in the corresponding iframe section.
-         */
-
-        const imagePages = [
-            { src: "tasks/Dog-optical-illusion-748497.jpg", time: 5 },
-            { src: "tasks/hm5ZyVyLzFeNUUQSa9XV8g-650-80.jpg.webp", time: 5 },
-            { src: "tasks/OpticalIllusionIQTestHowmanyAnimalscanyouspot.webp", time: 5 },
-            { src: 'puzzle4.png', time: 5 }
-            { src: 'puzzle4.png', time: 5 }
-            { src: 'puzzle4.png', time: 5 }
-            { src: 'puzzle4.png', time: 5 }
-            { src: 'puzzle4.png', time: 5 }
+        const audioFiles = [
+            '../outdir/audio_1.mp3',
+            '../outdir/audio_2.mp3',
+            '../outdir/audio_3.mp3',
+            '../outdir/audio_4.mp3',
+            '../outdir/audio_5.mp3',
+            '../outdir/audio_6.mp3',
+            '../outdir/audio_7.mp3',
+            '../outdir/audio_8.mp3',
+            '../outdir/audio_9.mp3',
+            '../outdir/audio_10.mp3'
         ];
 
-        const audioFile = 'task2-audio.mp3'; // Update with your local audio file name
+        const imagePages = [
+            { src: "tasks/Dog-optical-illusion.jpg", instruction: "Find the hidden facein the image.", time: 60 },
+            { src: "tasks/faceInCoffeeBean.jpg", instruction: "Spot the face hidden in coffee beans.", time: 60 },
+            { src: 'tasks/HiddenTiger.jpg', instruction: "Locate the hidden tiger in the image.", time: 60 },
+            { src: 'tasks/countHumanFaces.webp', instruction: "Count the total number of human faces.", time: 60 },
+            { src: 'tasks/horseFaces.webp', instruction: "Identify how many horse faces you can see.", time: 60 },
+            { src: 'tasks/HowmanyAnimals.webp', instruction: "Count how many different animals you can spot.", time: 60 },
+            { src: 'tasks/sixteenFaces.jpg', instruction: "How many faces are there in the picture?", time: 60 },
+            { src: 'tasks/thirteenHiddenFaces.webp', instruction: "Can you find all thirteen hidden faces.", time: 60 }
+        ];
 
         const pages = [
             { content: `<h1>Welcome to the Experiment</h1><h2>Please follow the instructions carefully as you proceed.</h2><div class="navigation"><button onclick="nextPage()">Start</button></div>`, time: null },
-            { content: `<h2>Instruction</h2><p>Please complete the general survey on the next page.</p>${timerTemplate()}`, time: 5 },
-            { content: `<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfwXS4vgz9DYN5cqy4TK3xe8BmVqNFEnBwxdL2pHy8rB0-Xxw/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>${timerTemplate()}`, time: 5 },
-            { content: `<h2>Task 1: Verbal-Semantic Analysis</h2><p>Listen to the audio passage and select the answer on the screen.</p><audio controls><source src="${audioFile}" type="audio/mpeg">Your browser does not support the audio element.</audio>
+            { content: `<h2>While you are in Acclimation Time period, please complete the general survey on the next page.</h2>${timerTemplate()}`, time: 10 },
+            { content: `<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfwXS4vgz9DYN5cqy4TK3xe8BmVqNFEnBwxdL2pHy8rB0-Xxw/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>${timerTemplate()}`, time: 120 },
+            { content: `<h2>Acclimation Time in progress...</h2>${timerTemplate()}`, time: 5 },
+            { content: `<h2>Baseline Recording - stay in resting position on your seat while keeping your eyes-open</h2>${timerTemplate()}`, time: 300 },
+            { content: `<h1>Verbal-Semantic Task</h1><h2>In this activity, you will listen audio file, and you will have to choose You will hear a series of sentences. Your task is to listen carefully and identify semantic inconsistency (i.e., something that doesn’t logically fit). Select inconsistency option on the screen based on what incorrect fact mentioned in the audio and speak  it loud in the mic. .<\h2>${timerTemplate()}`, time: 20 },
+            ...audioFiles.map((audioSrc, index) => ({
+                content: `
+                    <h2>Audio Task ${index + 1}</h2>
+                    <p>Listen to the following audio and select the option.</p>
+                    <audio controls><source src="${audioSrc}" type="audio/mpeg">Your browser does not support the audio element.</audio>
                     <div class="options">
-                        <label><input type="radio" name="audioQ"> Option A</label>
-                        <label><input type="radio" name="audioQ"> Option B</label>
-                        <label><input type="radio" name="audioQ"> Option C</label>
-                        <label><input type="radio" name="audioQ"> Option D</label>
-                    </div>${timerTemplate()}`, time: 5 },
-            
-            // Experimental Survey (Post Task 1):
-            { content: `<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSclo1hFxkItDj6Mgz93Ai8P3pKJPMrHB_nL068SWcHgO26UBQ/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>${timerTemplate()}`, time: 5 },
-            
-            { content: `<h2>Task 2: Visuospatial</h2><p>Instruction: Next, you will see images in next few slides. Please follow the instruction in the image section and select correct option.</p>${timerTemplate()}`, time: 5 },
+                        <label><input type="radio" name="audioQ${index + 1}"> Option A: There is an inconsistency in the sentence.</label> <br>
+                        <label><input type="radio" name="audioQ${index + 1}"> Option B: There is no inconsistency in the sentence.</label> <br>
+                        <label><input type="radio" name="audioQ${index + 1}"> Option C: I'm not sure. </label> <br>
+                      
+                    </div>
+                    ${timerTemplate()}
+                `,
+                time: 60
+            })),
+            { content: `<h2>Please complete the Experimetnal survey on next page based on your current stage</h2>${timerTemplate()}`, time: 10 },
+            { content: `<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSclo1hFxkItDj6Mgz93Ai8P3pKJPMrHB_nL068SWcHgO26UBQ/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>${timerTemplate()}`, time: 240 },
+            { content: `<h1>Visuospatial Task</h1><h2>In this activity, you will see images where you will be asked to find patterns.<\h2>${timerTemplate()}`, time: 10 },
             ...imagePages.map((img, i) => ({
                 content: `
-                    <h2>Puzzle Image ${i + 1}</h2>
+                    <h2>Visuospatial Puzzle ${i + 1}</h2>
+                    <p>${img.instruction}</p>
                     <img src="${img.src}" alt="Puzzle ${i + 1}">
                     <div class="options">
-                        <label><input type="radio" name="img${i + 1}"> Option A</label>
-                        <label><input type="radio" name="img${i + 1}"> Option B</label>
-                        <label><input type="radio" name="img${i + 1}"> Option C</label>
-                        <label><input type="radio" name="img${i + 1}"> Option D</label>
+                        <label><input type="radio" name="img${i + 1}"> Option A: I solved the puzzle.</label> <br>
+                        <label><input type="radio" name="img${i + 1}"> Option B: I couln't solved the puzzle.</label> <br>
+                        <label><input type="radio" name="img${i + 1}"> Option C: I'm not sure if there is a solution.</label> <br>
                     </div>
                     ${timerTemplate()}
                 `,
                 time: img.time
             })),
-            // Experimental Survey (Post Task 2):
-            { content: `<h1></h1><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSclo1hFxkItDj6Mgz93Ai8P3pKJPMrHB_nL068SWcHgO26UBQ/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>${timerTemplate()}`, time: 5 },
-            { content: `<h1>Thank you so much for participating in the experiment.</h1><h2>We really appreciate your contribution to our research.</h2>`, time: null }
+            { content: `<h2>Please complete the Experimetnal survey on next page based on your current stage</h2>${timerTemplate()}`, time: 10 },
+            { content: `<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSclo1hFxkItDj6Mgz93Ai8P3pKJPMrHB_nL068SWcHgO26UBQ/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>${timerTemplate()}`, time: 240 },
+
+            { content: `<h1>Thank you for participating in the experiment.</h1><h2>We appreciate your contribution.</h2>`, time: null }
         ];
 
         let currentPage = 0;

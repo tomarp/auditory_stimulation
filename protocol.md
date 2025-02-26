@@ -1,12 +1,12 @@
 # Title: "Prefrontal Laterality Modulation Through Targeted Auditory Beat Stimulation During Multimodal Cognitive Tasks"  
 
 **Abstract**  
-This study investigates how auditory beat stimulation modulates prefrontal hemispheric asymmetry and autonomic nervous system activity during cognitively demanding tasks under different lighting conditions. Participants (N=30) will perform verbal-logical (left hemisphere dominant) and visual-spatial (right hemisphere dominant) tasks under two auditory conditions: 10Hz binaural beats (440±10Hz) and 40Hz monaural amplitude-modulated tones (440Hz carrier), each paired in two groups Group-A: Red with 10Hz & 40Hz auditory condiitons; Group-B: Green with 10Hz & 40Hz auditory conditions. Red light therapy has been shown to enhance cognitive function by improving mitochondrial activity, increasing ATP production, and enhancing regional cerebral blood flow, which may benefit tasks requiring attention and memory[a][b][c]. Additionally, red light has been linked to improved executive function and memory in patients with traumatic brain injuries[b][d]. While the effects of green light on cognition are less documented, it is hypothesized to promote visual attention and potentially improve cognitive performance in tasks requiring logical abilities. Prefrontal beta-gamma asymmetry indices will be calculated from 4-channel EEG recordings, while autonomic activity will be monitored through heart rate variability (RMSSD) and electrodermal phasic responses. This study aims to elucidate how the combination of auditory stimulation and lighting conditions influences cognitive task performance and physiological responses.
+This study investigates how auditory beat stimulation modulates prefrontal hemispheric asymmetry and autonomic nervous system activity during cognitively demanding tasks under different lighting conditions. Participants (N=30) will perform verbal-logical (left hemisphere dominant) and visual-spatial (right hemisphere dominant) tasks under two auditory conditions: 10Hz binaural beats (440±10Hz) and 40Hz monaural amplitude-modulated tones (440Hz carrier), each paired in two groups Group-A: Red with 10Hz & 40Hz auditory condiitons; Group-B: Blue with 10Hz & 40Hz auditory conditions. Red light therapy has been shown to enhance cognitive function by improving mitochondrial activity, increasing ATP production, and enhancing regional cerebral blood flow, which may benefit tasks requiring attention and memory[a][b][c]. Additionally, red light has been linked to improved executive function and memory in patients with traumatic brain injuries[b][d]. Blue light exposure is known to enhance alertness and improve performance on cognitive tasks, particularly those requiring attention and working memory. It increases activation in brain regions associated with executive functions, such as the dorsolateral and ventrolateral prefrontal cortex Prefrontal beta-gamma asymmetry indices will be calculated from 4-channel EEG recordings, while autonomic activity will be monitored through heart rate variability (RMSSD) and electrodermal phasic responses. This study aims to elucidate how the combination of auditory stimulation and lighting conditions influences cognitive task performance and physiological responses.
 
 
 #### **Abstract References**  
 - **Red Light Effects**: Red light therapy enhances cognitive function by improving mitochondrial activity, increasing ATP production, and enhancing regional cerebral blood flow, benefiting tasks requiring attention and memory[a][b][c]. It also improves executive function and memory in patients with traumatic brain injuries[b][d].  
-- **Green Light Effects**: Although less documented, green light is hypothesized to promote visual attention and potentially improve cognitive performance in logical tasks.  
+- **Blue Light Effects**: Alertness and Cognitive Performance, Working Memory [h]; Reaction Time and Attention[i], 
 - **Auditory Stimulation**: The study examines the effects of 10Hz binaural beats and 40Hz monaural AM tones on hemispheric asymmetry and autonomic activity.  
 - **Physiological Measures**: EEG and autonomic measures (RMSSD, EDA) are used to assess physiological responses during tasks.
 - - **Physiological Measures**: EEG and autonomic measures (RMSSD, EDA) are used to assess physiological responses during tasks[e][f].  
@@ -26,93 +26,16 @@ This study investigates how auditory beat stimulation modulates prefrontal hemis
 
 **Instructions to Participants:** You will hear a series of sentences. Your task is to listen carefully and identify whether each sentence makes sense or if there is a semantic inconsistency (i.e., something that doesn’t logically fit). If you find an inconsistency, please choose correction option on the screen based on what correction should be made and state out loud the statement. **Response Method:** You will record your verbal responses using a HyperX microphone (with NVIDIA noise suppression). Please speak clearly into the mic when providing your corrections.
 
-**Example of Semantically Incorrect Statement:**
-- "A square has five sides."  
-**Correct answer:** "A square has **four** sides." Your action should be choose the correct option and speak the corrected statement.
-
-**Audio Text Passages for Task:**
-
-1. **Passage 1:**
-   - "The sun rises in the west."
-   - **Correct answer:** "The sun rises in the east."
-   
-2. **Passage 2:**
-   - "A triangle has three sides."
-   - **Correct answer:** "A triangle has three sides." (no correction needed)
-
-3. **Passage 3:**
-   - "Water boils at 50°C."
-   - **Correct answer:** "Water boils at 100°C."
-
-4. **Passage 4:**
-   - "An octagon has eight sides."
-   - **Correct answer:** "An octagon has eight sides." (no correction needed)
-
-5. **Passage 5:**
-   - "All birds can swim."
-   - **Correct answer:** "Not all birds can swim."
-
-6. **Passage 6:**
-   - "The Eiffel Tower is located in London."
-   - **Correct answer:** "The Eiffel Tower is located in Paris."
-
-7. **Passage 7:**
-   - "A cat is a type of bird."
-   - **Correct answer:** "A cat is a mammal."
-
-8. **Passage 8:**
-   - "The Earth is flat."
-   - **Correct answer:** "The Earth is round."
----
 
 **B. Visuospatial Manipulation (Right Hemisphere Engagement)**  
-- **3D Mental Rotation Task** (10 mins)  
-  - Judge mirrored/non-mirrored pairs of Necker cubes  
-  - Embedded visual puzzles require 45°-315° mental rotations  
+- **Pattern Recognition and Hidden Image Task** (10 mins)  
+  - Identify hidden patterns or objects within complex image puzzles  
+  - Tasks involve recognizing patterns, counting objects, or detecting hidden images  
   - Performance metric: Rotation angle vs response time slope  
 
-**Task Description:** Participants will view pairs of 3D Necker cubes and decide whether each pair shows a mirrored or non-mirrored configuration. The task involves mentally rotating the 3D shapes at different angles (from 45° to 315°) to assess their orientation.
+**Task Description:** Participants will view a series of complex image puzzles. In each puzzle, there will be hidden patterns, objects, or images that need to be identified. Tasks may involve counting the number of objects, identifying patterns, or detecting a hidden image within a seemingly random arrangement.
 
-**Instructions to Participants:** You will be shown pairs of images, each containing a 3D Necker cube. For each pair, please determine whether the two cubes are mirrored versions of each other or not. Your task is to mentally rotate the cubes and decide if the orientation is the same or if they are mirror images of each other.
-
-**Example:**
-- **Image Pair 1 (Mirrored Necker Cubes):** (Cubes shown with mirrored orientation). **Response:** "These cubes are mirrored."
-- **Image Pair 2 (Non-Mirrored Necker Cubes):** (Cubes shown with different orientations, not mirrored)  **Response:** "These cubes are not mirrored."
-
-**Visual Stimuli for Task:**
-
-1. **Image Pair 1:**
-   - Necker Cube A (45° rotation)
-   - Necker Cube B (Mirrored version)
-   - Response: "These cubes are mirrored."
-
-2. **Image Pair 2:**
-   - Necker Cube A (90° rotation)
-   - Necker Cube B (Non-mirrored)
-   - Response: "These cubes are not mirrored."
-
-3. **Image Pair 3:**
-   - Necker Cube A (180° rotation)
-   - Necker Cube B (Mirrored version)
-   - Response: "These cubes are mirrored."
-
-4. **Image Pair 4:**
-   - Necker Cube A (270° rotation)
-   - Necker Cube B (Non-mirrored)
-   - Response: "These cubes are not mirrored."
-
-5. **Image Pair 5:**
-   - Necker Cube A (315° rotation)
-   - Necker Cube B (Mirrored version)
-   - Response: "These cubes are mirrored."
-
-6. **Image Pair 6:**
-   - Necker Cube A (135° rotation)
-   - Necker Cube B (Non-mirrored)
-   - Response: "These cubes are not mirrored."
-
-#### **Performance Metric:**
-- **Rotation Angle vs. Response Time**: The time it takes you to correctly determine if the cubes are mirrored or not will be measured and compared to the rotation angle of the cubes.
+**Instructions to Participants:** You will be shown a series of image puzzles. Your task is to identify any hidden patterns, objects, or images within each puzzle. For example, you may need to count the number of certain objects, detect a hidden image, or spot a pattern in a cluttered design. Please respond within 1 min.
 
 
 <!-- **C. Cross-Modal Integration** (8 mins/condition)  
@@ -152,9 +75,9 @@ This study investigates how auditory beat stimulation modulates prefrontal hemis
 | Acclimation Time    | 5 Mins   | None                  | General Survey       | 
 | Baseline Recording  | 5 mins   | None                  | Resting eyes-open    |  
 | Condition 1         | 10 mins  | 10Hz Binaural         | Verbal-Semantic      |  
-| Washout             | 3 mins   | Pink noise (60dBA)    | Experiment Survey    |  
+| Washout             | 4 mins   | 10Hz Binaural + 1min Silence | Experiment Survey    |  
 | Condition 2         | 10 mins  | 40Hz Monaural AM      | Visuospatial         |  
-| Washout             | 3 mins   | Pink noise (60dBA)    | Experiment Survey    |  
+| Washout             | 3 mins   | 40Hz Binaural + 1min silence        | Experiment Survey    |  
 <!-- | Condition C         | 8 mins   | Nature Sounds         | Integration + Spatial|   -->
 
 
@@ -163,8 +86,8 @@ This study investigates how auditory beat stimulation modulates prefrontal hemis
   Condition_2 $(C_2)$ = RedLED$(L_1)$, 40Hz$(A_2)$, Task1,2 $(T_{1,2})$
 
 > **Group B:** <br>
-  Condition_1 $(C_1)$ = GreenLED $(L_2)$, 10Hz$(A_1)$, Task1,2 $(T_{1,2})$ <br>
-  Condition_2 $(C_2)$ = GreenLED$(L_2)$, 40Hz$(A_2)$, Task1,2 $(T_{1,2})$
+  Condition_1 $(C_1)$ = BlueLED $(L_2)$, 10Hz$(A_1)$, Task1,2 $(T_{1,2})$ <br>
+  Condition_2 $(C_2)$ = BlueLED$(L_2)$, 40Hz$(A_2)$, Task1,2 $(T_{1,2})$
 
 ## Section 4: Control Protocol (Per [3] Methodological Standards)  
 ### 4.1 Environmental Controls  
@@ -210,6 +133,8 @@ This study investigates how auditory beat stimulation modulates prefrontal hemis
 [e] https://eprints.soton.ac.uk/488356/1/1-s2.0-S0167876024000321-main.pdf  <br>
 [f] https://www.mdpi.com/2076-3425/14/2/131 <br>
 [g] https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2015.00070/full  <br>
+[h] https://pmc.ncbi.nlm.nih.gov/articles/PMC4989256/ <br>
+[i] http://dx.doi.org/10.34172/jrhs.2021.66 <br>
 
 [1] https://pmc.ncbi.nlm.nih.gov/articles/PMC11367212/ <br>
 [2] https://pmc.ncbi.nlm.nih.gov/articles/PMC8832987/ <br>
