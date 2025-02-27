@@ -36,10 +36,10 @@
             font-size: 2rem;
         }
         img {
-            width: 900px;
+            width: 600px;
             height: auto;
             margin: 30px;
-            border-radius: 20px;
+            border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.5);
         }
         audio {
@@ -115,32 +115,36 @@
         ];
 
         const imagePages = [
-            { src: "../indir/visuospatial/Dog-optical-illusion.jpg", instruction: "Find the hidden facein the image.", time: 60 },
-            { src: "../indir/visuospatial/faceInCoffeeBean.jpg", instruction: "Spot the face hidden in coffee beans.", time: 60 },
+            { src: "../indir/visuospatial/Dog-optical-illusion.jpg", instruction: "Could you find the hidden human face in the picture?", time: 60 },
+            { src: "../indir/visuospatial/faceInCoffeeBean.jpg", instruction: "Spot the hidden face in coffee beans.", time: 60 },
             { src: '../indir/visuospatial/HiddenTiger.jpg', instruction: "Locate the hidden tiger in the image.", time: 60 },
-            { src: '../indir/visuospatial/countHumanFaces.webp', instruction: "Count the total number of human faces.", time: 60 },
-            { src: '../indir/visuospatial/horseFaces.webp', instruction: "Identify how many horse faces you can see.", time: 60 },
-            { src: '../indir/visuospatial/HowmanyAnimals.webp', instruction: "Count how many different animals you can spot.", time: 60 },
-            { src: '../indir/visuospatial/sixteenFaces.jpg', instruction: "How many faces are there in the picture?", time: 60 },
-            { src: '../indir/visuospatial/thirteenHiddenFaces.webp', instruction: "Can you find all thirteen hidden faces.", time: 60 }
+            { src: '../indir/visuospatial/countPandas.jpg', instruction: "There are more than 2 pandas in this picture. Can you spot them all?", time: 60 },
+            { src: '../indir/visuospatial/countHumanFaces.webp', instruction: "Count 6 or more human faces in the image.", time: 60 },
+            { src: '../indir/visuospatial/ninePeopleFaces2.jpg', instruction: "Let's see if you can count 9 people in this illusion.", time: 60 },
+            { src: '../indir/visuospatial/horseFaces.webp', instruction: "Could you Identify more than 10 horse faces in the picture?", time: 60 },
+            { src: '../indir/visuospatial/HowmanyAnimals.webp', instruction: "Spot and Count 18 different animals in the image.", time: 60 },
+            { src: '../indir/visuospatial/sixteenFaces.jpg', instruction: "Could you count 16 faces there in the picture?", time: 60 },
+            { src: '../indir/visuospatial/thirteenHiddenFaces.webp', instruction: "Can you find all 13 hidden faces.", time: 60 }
         ];
 
         const pages = [
-            { content: `<h1>Welcome to the Experiment</h1><h2>Please follow the instructions carefully as you proceed.</h2><div class="navigation"><button onclick="nextPage()">Start</button></div>`, time: null },
+            { content: `<h1>Welcome to the Experiment</h1><h2>Please follow the instructions carefully as you proceed.</h2><p>Complete all the tasks.<br>Follow TIMER on top-right to complete the tasks.<br>Avoid using mobile phone during experiment.<br>Adjust your chair before starting the experiment.</p><div class="navigation"><button onclick="nextPage()">Start</button></div>`, time: null },
+            { content: `<h2>Acclimation Time in progress...</h2>${timerTemplate()}`, time: 170 },
             { content: `<h2>While you are in Acclimation Time period, please complete the general survey on the next page.</h2>${timerTemplate()}`, time: 10 },
             { content: `<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfwXS4vgz9DYN5cqy4TK3xe8BmVqNFEnBwxdL2pHy8rB0-Xxw/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>${timerTemplate()}`, time: 120 },
-            { content: `<h2>Acclimation Time in progress...</h2>${timerTemplate()}`, time: 5 },
-            { content: `<h2>Baseline Recording - stay in resting position on your seat while keeping your eyes-open</h2>${timerTemplate()}`, time: 300 },
-            { content: `<h1>Verbal-Semantic Task</h1><h2>In this activity, you will listen audio file, and you will have to choose You will hear a series of sentences. Your task is to listen carefully and identify semantic inconsistency (i.e., something that doesn’t logically fit). Select inconsistency option on the screen based on what incorrect fact mentioned in the audio and speak  it loud in the mic. .<\h2>${timerTemplate()}`, time: 20 },
+            
+            { content: `<h1>BASELINE Recording</h1><h2>Stay in resting position on your seat while keeping your eyes open.</h2><p>Please don't use your mobile phone during this time.</p>${timerTemplate()}`, time: 300 },
+            { content: `<h1>Welcome to Verbal-Semantic Task</h1><h2>Click to PLAY audio file and listen carefully. Your task is to identify semantic inconsistency (i.e., something that doesn’t logically fit). Select inconsistency option on the screen based on what you find in the audio description.<\h2>${timerTemplate()}`, time: 20 },
             ...audioFiles.map((audioSrc, index) => ({
                 content: `
-                    <h2>Audio Task ${index + 1}</h2>
-                    <p>Listen to the following audio and select the option.</p>
+                    <h2>Audio Track ${index + 1}</h2>
+                    <p>Click on Play and listen the audio track. Replay audio if you want, and select the desired option.</p>
                     <audio controls><source src="${audioSrc}" type="audio/mpeg">Your browser does not support the audio element.</audio>
                     <div class="options">
-                        <label><input type="radio" name="audioQ${index + 1}"> Option A: There is an inconsistency in the sentence.</label> <br>
-                        <label><input type="radio" name="audioQ${index + 1}"> Option B: There is no inconsistency in the sentence.</label> <br>
-                        <label><input type="radio" name="audioQ${index + 1}"> Option C: I'm not sure. </label> <br>
+                        <label><input type="radio" name="audioQ${index + 1}"> Option A: There was INCONSISTENCY in the sentence.</label> <br>
+                        // <label style="text-align: left; display: inline-block;"><input type="radio" name="audioQ${index + 1}"> Option A: There was inconsistency in the sentence.</label> <br>
+                        <label><input type="radio" name="audioQ${index + 1}"> Option B: There was NO INCONSISTENCY in the sentence.</label> <br>
+                        <label><input type="radio" name="audioQ${index + 1}"> Option C: There was INCONSISTENCY in the sentence but was CORRECTED. </label> <br>
                       
                     </div>
                     ${timerTemplate()}
@@ -149,10 +153,10 @@
             })),
             { content: `<h2>Please complete the Experimetnal survey on next page based on your current stage</h2>${timerTemplate()}`, time: 10 },
             { content: `<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSclo1hFxkItDj6Mgz93Ai8P3pKJPMrHB_nL068SWcHgO26UBQ/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>${timerTemplate()}`, time: 240 },
-            { content: `<h1>Visuospatial Task</h1><h2>In this activity, you will see images where you will be asked to find patterns.<\h2>${timerTemplate()}`, time: 10 },
+            { content: `<h1>Welcome to Optical Illusion Task</h1><h2>You will see images on your screen where you will be asked to find patterns.<\h2>${timerTemplate()}`, time: 15 },
             ...imagePages.map((img, i) => ({
                 content: `
-                    <h2>Visuospatial Puzzle ${i + 1}</h2>
+                    <h2>Visuospatial Optical Illusion ${i + 1}</h2>
                     <p>${img.instruction}</p>
                     <img src="${img.src}" alt="Puzzle ${i + 1}">
                     <div class="options">
@@ -165,9 +169,9 @@
                 time: img.time
             })),
             { content: `<h2>Please complete the Experimetnal survey on next page based on your current stage</h2>${timerTemplate()}`, time: 10 },
-            { content: `<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSclo1hFxkItDj6Mgz93Ai8P3pKJPMrHB_nL068SWcHgO26UBQ/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>${timerTemplate()}`, time: 240 },
+            { content: `<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSclo1hFxkItDj6Mgz93Ai8P3pKJPMrHB_nL068SWcHgO26UBQ/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>${timerTemplate()}`, time: 180 },
 
-            { content: `<h1>Thank you for participating in the experiment.</h1><h2>We appreciate your contribution.</h2>`, time: null }
+            { content: `<h1>Thank you for participating in the experiment.</h1><h2>We appreciate your contribution to our research.</h2>`, time: null }
         ];
 
         let currentPage = 0;

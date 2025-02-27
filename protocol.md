@@ -7,9 +7,8 @@ This study investigates how auditory beat stimulation modulates prefrontal hemis
 #### **Abstract References**  
 - **Red Light Effects**: Red light therapy enhances cognitive function by improving mitochondrial activity, increasing ATP production, and enhancing regional cerebral blood flow, benefiting tasks requiring attention and memory[a][b][c]. It also improves executive function and memory in patients with traumatic brain injuries[b][d].  
 - **Blue Light Effects**: Alertness and Cognitive Performance, Working Memory [h]; Reaction Time and Attention[i], 
-- **Auditory Stimulation**: The study examines the effects of 10Hz binaural beats and 40Hz monaural AM tones on hemispheric asymmetry and autonomic activity.  
-- **Physiological Measures**: EEG and autonomic measures (RMSSD, EDA) are used to assess physiological responses during tasks.
-- - **Physiological Measures**: EEG and autonomic measures (RMSSD, EDA) are used to assess physiological responses during tasks[e][f].  
+- **Auditory Stimulation**: The study examines the effects of 10Hz and 40Hz binaural beats on hemispheric asymmetry and autonomic activity.
+- **Physiological Measures**: EEG and autonomic measures (RMSSD, EDA) are used to assess physiological responses during tasks[e][f].  
 - **Cognitive Modulation**: Auditory beat stimulation can modulate cognitive processes and mood states[g].
 
 
