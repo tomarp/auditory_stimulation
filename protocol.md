@@ -1,7 +1,7 @@
-# Title: "Prefrontal Laterality Modulation Through Targeted Auditory Beat Stimulation During Multimodal Cognitive Tasks"  
+# Title: "Prefrontal Laterality Modulation Through Targeted Auditory Beat Stimulation During Multimodal Cognitive Tasks under Photometric Conditions"  
 
 **Abstract**  
-This study investigates how auditory beat stimulation modulates prefrontal hemispheric asymmetry and autonomic nervous system activity during cognitively demanding tasks under different lighting conditions. Participants (N=30) will perform verbal-logical (left hemisphere dominant) and visual-spatial (right hemisphere dominant) tasks under two auditory conditions: 10Hz binaural beats (440±10Hz) and 40Hz monaural amplitude-modulated tones (440Hz carrier), each paired in two groups Group-A: Red with 10Hz & 40Hz auditory condiitons; Group-B: Blue with 10Hz & 40Hz auditory conditions. Red light therapy has been shown to enhance cognitive function by improving mitochondrial activity, increasing ATP production, and enhancing regional cerebral blood flow, which may benefit tasks requiring attention and memory[a][b][c]. Additionally, red light has been linked to improved executive function and memory in patients with traumatic brain injuries[b][d]. Blue light exposure is known to enhance alertness and improve performance on cognitive tasks, particularly those requiring attention and working memory. It increases activation in brain regions associated with executive functions, such as the dorsolateral and ventrolateral prefrontal cortex Prefrontal beta-gamma asymmetry indices will be calculated from 4-channel EEG recordings, while autonomic activity will be monitored through heart rate variability (RMSSD) and electrodermal phasic responses. This study aims to elucidate how the combination of auditory stimulation and lighting conditions influences cognitive task performance and physiological responses.
+This study investigates how auditory beat stimulation modulates prefrontal hemispheric asymmetry and autonomic nervous system activity during cognitively demanding tasks under two different photometric conditions. Participants (N=30) will perform verbal-logical (left hemisphere dominant) and visual-spatial (right hemisphere dominant) tasks under two auditory conditions: 10Hz binaural beats (440±10Hz) and 40Hz binaural beats (440±40Hz), each paired in two groups based on photometric condition (i.e. Red with 10Hz & 40Hz auditory condiitons; Blue with 10Hz & 40Hz auditory conditions). Red light therapy has been shown to enhance cognitive function by improving mitochondrial activity, increasing ATP production, and enhancing regional cerebral blood flow, which may benefit tasks requiring attention and memory[a][b][c]. Additionally, red light has been linked to improved executive function and memory in patients with traumatic brain injuries[b][d]. Blue light exposure is known to enhance alertness and improve performance on cognitive tasks, particularly those requiring attention and working memory. It increases activation in brain regions associated with executive functions, such as the dorsolateral and ventrolateral prefrontal cortex. Prefrontal beta-gamma asymmetry indices (ASI) will be calculated from 4-channel EEG recordings, while autonomic activity will be monitored through heart rate variability (RMSSD) and electrodermal phasic responses. This study aims to elucidate how the combination of auditory stimulation and photometric conditions influences cognitive task performance and physiological responses.
 
 
 #### **Abstract References**  
@@ -12,7 +12,7 @@ This study investigates how auditory beat stimulation modulates prefrontal hemis
 - **Cognitive Modulation**: Auditory beat stimulation can modulate cognitive processes and mood states[g].
 
 
-`Keywords: Auditory Stimuli, Brain Lateralization, Physiological Responses, Cognitive Tasks, Multisensory, Multidomain`
+`Keywords: Auditory Stimuli, Photometric Conditions, Brain Lateralization, Physiological Responses, Cognitive Tasks, Multisensory, Multidomain`
 ---
 
 ## Experimental Protocol
@@ -34,7 +34,7 @@ This study investigates how auditory beat stimulation modulates prefrontal hemis
 
 **Task Description:** Participants will view a series of complex image puzzles. In each puzzle, there will be hidden patterns, objects, or images that need to be identified. Tasks may involve counting the number of objects, identifying patterns, or detecting a hidden image within a seemingly random arrangement.
 
-**Instructions to Participants:** You will be shown a series of image puzzles. Your task is to identify any hidden patterns, objects, or images within each puzzle. For example, you may need to count the number of certain objects, detect a hidden image, or spot a pattern in a cluttered design. Please respond within 1 min.
+**Instructions to Participants:** You will be shown a series of optical illusions puzzle. Your task is to identify any hidden patterns, objects, or images within each puzzle. For example, you may need to count the number of certain objects, detect a hidden image, or spot a pattern in a cluttered design. Please respond within 1 min.
 
 
 <!-- **C. Cross-Modal Integration** (8 mins/condition)  
@@ -75,8 +75,8 @@ This study investigates how auditory beat stimulation modulates prefrontal hemis
 | Baseline Recording  | 5 mins   | None                  | Resting eyes-open    |  
 | Condition 1         | 10 mins  | 10Hz Binaural         | Verbal-Semantic      |  
 | Washout             | 4 mins   | 10Hz Binaural + 1min Silence | Experiment Survey    |  
-| Condition 2         | 10 mins  | 40Hz Monaural AM      | Visuospatial         |  
-| Washout             | 3 mins   | 40Hz Binaural + 1min silence        | Experiment Survey    |  
+| Condition 2         | 10 mins  | 40Hz Binaural         | Visuospatial         |  
+| Washout             | 3 mins   | 40Hz Binaural         | Experiment Survey    |  
 <!-- | Condition C         | 8 mins   | Nature Sounds         | Integration + Spatial|   -->
 
 
@@ -94,10 +94,10 @@ This study investigates how auditory beat stimulation modulates prefrontal hemis
   - Double-walled Nextroom lab  
   - Galaxy Buds passive isolation: 23dB SNR (measured via GRAS 45CA)  
 
-- **Physiological Constants**  
+- **Environmental Constants**  
   - Ambient light: LED panels + Red light
-  - Ambient light: LED panels + Green light
-  - Temperature: Normal conditions ~22±0.5°C (HVAC-controlled)  
+  - Ambient light: LED panels + Blue light
+  - Temperature: Normal conditions ~22±1.0°C (HVAC-controlled)  
 
 <!-- ### 4.2 Counterbalancing Matrix  
 | Group | Order                  | Beat Polarization    |  
@@ -106,22 +106,68 @@ This study investigates how auditory beat stimulation modulates prefrontal hemis
 | 2     | AM→Nature→Binaural     | Left→Bilateral→Right |  
 | 3     | Nature→Binaural→AM     | Bilateral→Right→Left |   -->
 
-## Technical Validation
-1. **10Hz Binaural Effects**  
-   - Right prefrontal beta enhancement aligns with [1] findings of 10Hz beat-induced right temporal activation  
-   - Phase offset (0° vs 180°) matches interaural time difference requirements from [3]  
 
-2. **40Hz Monaural Design**  
-   - AM depth (80%) replicates successful IED reduction protocol from [2]  
-   - Right-ear delivery leverages left hemisphere auditory pathway dominance [3]  
+## Section 5: Technical Validation for 10Hz Binaural Effects and 40Hz Binaural Effects 
+   - The technical validation of binaural effects involves **neuroscientific, psychoacoustic, and EEG-based evidence** supporting the influence of these frequencies on brain activity.
 
-3. **Task Synchronization**  
+### 5.1 10Hz Binaural Effects (Alpha Wave Stimulation)
+#### **Neuroscientific Basis**
+- **Right Prefrontal Beta Modulation**:  
+  - Studies show **10Hz binaural beats** influence **right temporal lobe activity**, enhancing relaxation and mild cognitive shifts.
+- **EEG Alpha Power Increase**:  
+  - Increased **alpha synchronization** correlates with meditation, stress reduction, and improved mood.
+
+#### **Psychoacoustic Considerations**
+- **Interaural Time Difference (ITD) Validation**:  
+  - **Phase offset (0° vs 180°)** ensures proper brainwave entrainment by maintaining the **10Hz difference** between left and right auditory pathways.
+
+#### **Experimental Design Validation**
+- **Entrainment Duration**:  
+  - **10-minute exposure** to **10Hz beats** aligns with literature on **theta-to-alpha wave transition**, which is linked to relaxation and attentional shifts.
+- **Artifact Control**:  
+  - **ISI jittering** (introducing slight variations in stimulus timing) prevents rhythmic expectation effects, ensuring natural brain entrainment.
+
+### 5.2 40Hz Binaural Effects (Gamma Wave Stimulation)
+#### **Neuroscientific Basis**
+- **Cognitive Enhancement and Memory Processing**:  
+  - **40Hz stimulation** has been linked to **increased gamma activity**, associated with **working memory, cognitive function, and neural synchronization**.
+- **Neural Oscillation Support in Alzheimer's Research**:  
+  - Studies suggest **40Hz entrainment** may **enhance synaptic plasticity** and **reduce beta-amyloid accumulation**, relevant for neurodegenerative disease research.
+
+#### **Psychoacoustic Considerations**
+- **Interaural Amplitude Modulation (AM) Depth Validation**:  
+  - **80% AM depth** effectively triggers **auditory steady-state responses (ASSR)**, supporting cognitive enhancement protocols.
+
+#### **Experimental Design Validation**
+- **Hemispheric Asymmetry Consideration**:  
+  - **Right-ear dominant delivery** exploits **left-hemisphere auditory processing** benefits, known for language and logical reasoning functions.
+- **Gamma Entrainment Protocol**:  
+  - **10-minute exposure** aligns with **cortical phase synchronization** timeframes used in focus and attention studies. 
+
+### 5.3 Task Synchronization
    - 10-min blocks allow sufficient entrainment time per [1] theta wave observations  
    - ISI jitter prevents rhythmic expectation artifacts [3]  
 
-4. **Asymmetry Quantification**  
-   - ASI formula validated against [3] laterality index methods  
-   - Beta/gamma focus matches Muse S sensor capabilities [1]  
+
+### 5.4 Asymmetry Index (ASI)
+   - The **ASI** is used to measure differences in brain activity between the left and right hemispheres, and commonly used to quantify hemispheric dominance, validated against [3] laterality index methods. We will be utilizing Muse S sensor capabilities [1] to match beta/gamma focus.   
+      
+   - $ASI = \frac{(P_{Right} - P_{Left})}{(P_{Right} + P_{Left})}$   
+      where:  
+         $P_{Right}$ = Power (or amplitude) of brain activity in the **right hemisphere**  
+         $P_{Left}$  = Power (or amplitude) of brain activity in the **left hemisphere**  
+
+<!-- #### **How It Works:**
+- The ASI value ranges from **-1 to +1**.
+  - **Positive ASI**: More activity in the right hemisphere.
+  - **Negative ASI**: More activity in the left hemisphere.
+  - **Zero (0) ASI**: Symmetric brain activity.
+
+#### **Application in Binaural Beats**
+- **10Hz Binaural Beats** (Alpha waves) may induce a shift in **prefrontal asymmetry**, potentially linked to relaxation and mood regulation.  
+- **40Hz Binaural Beats** (Gamma waves) could enhance **right-hemisphere dominance**, associated with cognitive processing and attention.  
+- ASI helps track **neural lateralization** during auditory entrainment. -->
+
 
 
 ## Citations:
