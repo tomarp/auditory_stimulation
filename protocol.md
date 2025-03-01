@@ -47,7 +47,7 @@ This study investigates how auditory beat stimulation modulates prefrontal hemis
 | Condition               | Specification                          | Neurological Basis[1][3]               |  
 |-------------------------|----------------------------------------|----------------------------------------|  
 | 10Hz Binaural Beats     | 440Hz ±10Hz (L/R phase offset)         | Right prefrontal beta enhancement[1]   |  
-| 40Hz Monaural AM Tones  | 440Hz carrier, 40Hz AM depth 80%       | Left temporal gamma entrainment[2][3]  |  
+| 40Hz Binaural Beats     | 440Hz carrier, 40Hz AM depth 80%       | Left temporal gamma entrainment[2][3]  |  
 <!-- | Nature Sounds           | 1/f noise spectrum with 4Hz modulation | Bilateral alpha synchronization[1]     |   -->
 
 ### 2.2 Stimulus Delivery Protocol  
