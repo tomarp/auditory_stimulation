@@ -81,8 +81,8 @@ This study investigates how auditory beat stimulation modulates prefrontal hemis
 
 
 > **Group A:** <br>
-  Condition_1 $(C_1)$ = RedLED$(L_1)$, 10Hz$(A_1)$, Task1,2 $(T_{1,2})$ <br>
-  Condition_2 $(C_2)$ = RedLED$(L_1)$, 40Hz$(A_2)$, Task1,2 $(T_{1,2})$
+  Condition_1 $(C_1)$ = RedLED $(L_1)$, 10Hz $(A_1)$, Task1,2 $(T_{1,2})$ <br>
+  Condition_2 $(C_2)$ = RedLED $(L_1)$, 40Hz $(A_2)$, Task1,2 $(T_{1,2})$
 
 > **Group B:** <br>
   Condition_1 $(C_1)$ = BlueLED $(L_2)$, 10Hz$(A_1)$, Task1,2 $(T_{1,2})$ <br>
@@ -107,7 +107,7 @@ This study investigates how auditory beat stimulation modulates prefrontal hemis
 | 3     | Nature→Binaural→AM     | Bilateral→Right→Left |   -->
 
 
-## Section 5: Technical Validation for 10Hz Binaural Effects and 40Hz Binaural Effects 
+## Section 5: Technical Validation for 10Hz Binaural and 40Hz Binaural Effects 
    - The technical validation of binaural effects involves **neuroscientific, psychoacoustic, and EEG-based evidence** supporting the influence of these frequencies on brain activity.
 
 ### 5.1 10Hz Binaural Effects (Alpha Wave Stimulation)

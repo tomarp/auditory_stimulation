@@ -128,9 +128,9 @@
         ];
 
         const pages = [
-            { content: `<h1>Welcome to the Experiment</h1><h2>Please follow the instructions carefully as you proceed.</h2><p>Complete all the tasks.<br>Follow TIMER on top-right to complete the tasks.<br>Avoid using mobile phone during experiment.<br>Adjust your chair before starting the experiment.</p><div class="navigation"><button onclick="nextPage()">Start</button></div>`, time: null },
-            { content: `<h2>Acclimation Time in progress...</h2>${timerTemplate()}`, time: 170 },
-            { content: `<h2>While you are in Acclimation Time period, please complete the general survey on the next page.</h2>${timerTemplate()}`, time: 10 },
+            { content: `<h1>Welcome to the Experiment</h1><h2>Please follow the instructions carefully as you proceed.</h2><p>Complete all the tasks carefully.<br>Follow TIMER on top-right to complete the tasks.<br>Put your phone on Silent and avoid using it during experiment.<br>Adjust your chair before starting the experiment.</p><div class="navigation"><button onclick="nextPage()">Start</button></div>`, time: null },
+            { content: `<h2>Acclimation Time in progress...</h2>${timerTemplate()}`, time: 160 },
+            { content: `<h2>While you are in Acclimation Time period, please complete the GENERAL SURVEY on the next page.</h2>${timerTemplate()}`, time: 20 },
             { content: `<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfwXS4vgz9DYN5cqy4TK3xe8BmVqNFEnBwxdL2pHy8rB0-Xxw/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>${timerTemplate()}`, time: 120 },
             
             { content: `<h1>BASELINE Recording</h1><h2>Stay in resting position on your seat while keeping your eyes open.</h2><p>Please don't use your mobile phone during this time.</p>${timerTemplate()}`, time: 300 },
@@ -142,7 +142,7 @@
                     <audio controls><source src="${audioSrc}" type="audio/mpeg">Your browser does not support the audio element.</audio>
                     <div class="options">
                         <label><input type="radio" name="audioQ${index + 1}"> Option A: There was INCONSISTENCY in the sentence.</label> <br>
-                        // <label style="text-align: left; display: inline-block;"><input type="radio" name="audioQ${index + 1}"> Option A: There was inconsistency in the sentence.</label> <br>
+                        <!-- <label style="text-align: left; display: inline-block;"><input type="radio" name="audioQ${index + 1}"> Option A: There was inconsistency in the sentence.</label> <br> -->
                         <label><input type="radio" name="audioQ${index + 1}"> Option B: There was NO INCONSISTENCY in the sentence.</label> <br>
                         <label><input type="radio" name="audioQ${index + 1}"> Option C: There was INCONSISTENCY in the sentence but was CORRECTED. </label> <br>
                       
@@ -151,7 +151,7 @@
                 `,
                 time: 60
             })),
-            { content: `<h2>Please complete the Experimetnal survey on next page based on your current stage</h2>${timerTemplate()}`, time: 10 },
+            { content: `<h1>Experimental Survey</h1><h2>Please complete the survey on next page based on your CURRENT stage.</h2>${timerTemplate()}`, time: 10 },
             { content: `<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSclo1hFxkItDj6Mgz93Ai8P3pKJPMrHB_nL068SWcHgO26UBQ/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>${timerTemplate()}`, time: 240 },
             { content: `<h1>Welcome to Optical Illusion Task</h1><h2>You will see images on your screen where you will be asked to find patterns.<\h2>${timerTemplate()}`, time: 15 },
             ...imagePages.map((img, i) => ({
@@ -168,7 +168,7 @@
                 `,
                 time: img.time
             })),
-            { content: `<h2>Please complete the Experimetnal survey on next page based on your current stage</h2>${timerTemplate()}`, time: 10 },
+            { content: `<h1>Experimental Survey</h1><h2>Please complete the survey on next page based on your CURRENT stage.</h2>${timerTemplate()}`, time: 10 },
             { content: `<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSclo1hFxkItDj6Mgz93Ai8P3pKJPMrHB_nL068SWcHgO26UBQ/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>${timerTemplate()}`, time: 180 },
 
             { content: `<h1>Thank you for participating in the experiment.</h1><h2>We appreciate your contribution to our research.</h2>`, time: null }
