@@ -1,0 +1,262 @@
+/* Shared styles for all pages */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif; /* Default font for paragraphs */
+    background-image: url('background.jpg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Logo container styling */
+.logo-container {
+    position: absolute; /* Position logos absolutely */
+    z-index: 1000; /* Ensure logos are above other content */
+}
+
+/* Logo styling */
+.logo {
+    width: 400px; /* Default size for logos */
+    height: auto;
+    opacity: 1.0; /* Set transparency (0 = fully transparent, 1 = fully opaque) */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+/* Hover effect for logos */
+.logo:hover {
+    opacity: 0.7; /* Fully opaque on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Position and customize individual logos */
+#logo1 {
+    top: 20px; /* Distance from the top */
+    left: 1100px; /* Distance from the left */
+}
+
+#logo2 {
+    top: 20px; /* Distance from the top */
+    right: 20px; /* Distance from the right */
+    opacity: 0.8; /* Custom transparency for this logo */
+    transform: rotate(10deg); /* Rotate this logo */
+}
+
+#logo3 {
+    bottom: 20px; /* Distance from the bottom */
+    left: 20px; /* Distance from the left */
+    opacity: 0.6; /* Custom transparency for this logo */
+    width: 120px; /* Custom size for this logo */
+}
+
+#logo4 {
+    bottom: 20px; /* Distance from the bottom */
+    right: 20px; /* Distance from the right */
+    opacity: 0.9; /* Custom transparency for this logo */
+    filter: grayscale(50%); /* Apply a grayscale filter */
+}
+
+/* Container styling */
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Heading 1 styling */
+h1 {
+    font-size: 5rem;
+    margin-bottom: 20px;
+    color: #00e676; /* Green color for h1 */
+    font-family: 'Poppins', sans-serif; /* Fancy font for h1 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for depth */
+    letter-spacing: 2px; /* Increase spacing between letters */
+    text-transform: uppercase; /* Uppercase text */
+    font-weight: 700; /* Bold font weight */
+}
+
+/* Heading 2 styling */
+h2 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: #ff4081; /* Pink color for h2 */
+    font-family: 'Montserrat', sans-serif; /* Modern font for h2 */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
+    letter-spacing: 1px; /* Slightly increase letter spacing */
+    font-weight: 600; /* Semi-bold font weight */
+}
+
+/* Heading 4 styling */
+h3 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: hwb(117 14% 16%); /* Pink color for h2 */
+    font-family: 'Montserrat', sans-serif; /* Modern font for h2 */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
+    letter-spacing: 1px; /* Slightly increase letter spacing */
+    font-weight: 600; /* Semi-bold font weight */
+}
+
+/* Heading 4 styling */
+h4 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: rgba(76, 53, 203, 0.837); /* Pink color for h2 */
+    font-family: 'Pacifico', cursive; /*Indie Flower */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
+    letter-spacing: 1px; /* Slightly increase letter spacing */
+    font-weight: 600; /* Semi-bold font weight */
+}
+
+/* Paragraph styling */
+p {
+    font-size: 2rem;
+    color: #03a9f4; /* Blue color for paragraphs */
+    text-align: left; /* Align text to the left */
+    font-family: 'Open Sans', sans-serif; /* Readable font for paragraphs */
+    line-height: 1.6; /* Increase line height for better readability */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+}
+
+/* Button styling */
+button {
+    padding: 15px 30px;
+    margin: 20px;
+    font-size: 2.5rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #1f1f1f;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: 'Roboto', sans-serif; /* Simple and bold font for buttons */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 1px; /* Increase letter spacing */
+    font-weight: 500; /* Medium font weight */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #333333;
+    transform: translateY(-2px); /* Slight lift on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+/* Timer styling */
+.timer-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 150px;
+    height: 150px;
+    z-index: 1000;
+}
+
+.timer-svg {
+    transform: rotate(-90deg);
+}
+
+.timer-circle-bg {
+    fill: none;
+    stroke: #333;
+    stroke-width: 10;
+}
+
+.timer-circle {
+    fill: none;
+    stroke: #00e676;
+    stroke-width: 10;
+    stroke-linecap: round;
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    transition: stroke-dashoffset 1s linear;
+}
+
+.timer-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: #00e676; /* Green color for timer text */
+    font-family: 'Montserrat', sans-serif; /* Modern font for timer text */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
+}
+
+/* Dynamic Text Styling */
+.dynamic-text {
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* Cursor Styling */
+.cursor {
+    display: inline-block;
+    width: 3px;
+    background-color: #ffffff;
+    margin-left: 5px;
+    animation: blink 0.7s infinite; /* Blinking cursor effect */
+}
+
+/* Blinking Animation for Cursor */
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Style for Options */
+.options {
+    text-align: left;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.options label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.options input {
+    transform: scale(1.5); /* Make checkboxes/radio buttons larger */
+}
+
+/* Style for Optical Illusion Images */
+img {
+    display: block; /* Center the image */
+    margin: 20px auto; /* Add space around */
+    width: 100%; /* Make it responsive */
+    max-width: 600px; /* Limit max size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Soft rounded corners */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Light shadow effect */
+}
+
+
+/* Style for Image Containers */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
