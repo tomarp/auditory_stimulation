@@ -30,13 +30,13 @@
                     <h2>You will see images on your screen where you will be asked to find patterns.</h2>
                     ${timerTemplate()}
                 `, 
-                time: 1 
+                time: 15 
             },
             ...imagePages.map((img, i) => ({
                 content: `
                     <h2>Optical Illusion ${i + 1}</h2>
                     <p>${img.instruction}</p>
-                    <img src="${img.src}" alt="Puzzle ${i + 1}" style="width: 90%; max-width: 1100px; height:auto;">
+                    <img src="${img.src}" alt="Puzzle ${i + 1}" style="width: 90%; max-width: 600px; height:auto;">
                     <div class="options">
                         <label><input type="checkbox" name="img${i + 1}"> Option A: I solved the puzzle.</label> <br>
                         <label><input type="checkbox" name="img${i + 1}"> Option B: I couldn't solve the puzzle.</label> <br>

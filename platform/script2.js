@@ -1,11 +1,10 @@
 const textElement = document.getElementById("typing-effect");
 const texts = [
-    "Please follow the instructions carefully as you proceed.",
-    "Complete all the tasks carefully.",
-    "Follow timer on top-right of the screen.",
-    "Submit the task before the timer expires.",
-    "Keep your phone on silent mode and avoid using it.",
-    "Adjust your chair before baseline recording."
+    "Please set your phone to silent mode and avoid using it.",
+    "Adjust your chair to a comfortable position.",
+    "Pick up the headphones from the table and put them on.",
+    "Keep an eye on the timer in the top-right corner of the screen.",
+    "Submit your task before the timer runs out.",
 ];
 
 let textIndex = 0;
