@@ -7,11 +7,45 @@ html, body {
     background-color: #121212;
     color: #ffffff;
     font-family: 'Open Sans', sans-serif;
-    background-image: url('background.jpg');
+
+    /* background-color: rgba(181, 139, 139, 0.663) !important; */
+    
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+
+}
+
+/* Backgrounds for specific pages */
+body[data-page="start"] {
+    background-image: url('visuals/background/start.jpeg');
+     /* Add a transparent overlay */
+     background-color: rgba(0, 0, 0, 0.8); /* Adjust opacity (0 = fully transparent, 1 = solid) */
+     background-blend-mode: overlay; /* Blend image with transparent color */
+}
+
+body[data-page="baseline"] {
+    background-image: url('visuals/background/img1.png');
+    /* Add a transparent overlay */
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust opacity (0 = fully transparent, 1 = solid) */
+    background-blend-mode: overlay; /* Blend image with transparent color */
+}
+
+body[data-page="task1"] {
+    background-image: url('task1-bg.jpg');
+}
+
+body[data-page="task2"] {
+    background-image: url('task2-bg.jpg');
+}
+
+body[data-page="survey2_1"] {
+    background-image: url('survey2_1-bg.jpg');
+}
+
+body[data-page="survey2_2"] {
+    background-image: url('survey2_2-bg.jpg');
 }
 
 /* Logo container styling */
@@ -85,7 +119,7 @@ h3 {
 h4 {
     font-size: 3rem;
     margin-bottom: 20px;
-    color: rgba(76, 53, 203, 0.837); /* Pink color for h2 */
+    color: rgba(158, 143, 241, 0.711); /* Pink color for h2 */
     font-family: 'Pacifico', cursive; /*Indie Flower */
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
     letter-spacing: 1px; /* Slightly increase letter spacing */
@@ -215,9 +249,4 @@ img {
     background-color: #ffffff;
     margin-left: 5px;
     animation: blink 0.7s infinite;
-}
-
-/* Force Background Change */
-body {
-    /* background-color: rgba(31, 3, 3, 0.663) !important; */
 }
