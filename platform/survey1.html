@@ -13,7 +13,7 @@
         const pages = [
             {
                 content: `
-                    <h2>While you are in Acclimation Time period, please complete the GENERAL SURVEY on the next page.</h2>
+                    <h2>This is Acclimation Time period, please complete the GENERAL SURVEY on the next page.</h2>
                     <div class="timer-container">
                         <svg class="timer-svg" width="150" height="150">
                             <circle class="timer-circle-bg" cx="75" cy="75" r="70"></circle>
@@ -36,7 +36,7 @@
                         <div class="timer-text" id="timer">120s</div>
                     </div>
                 `,
-                time: 140
+                time: 120
             }
         ];
 
@@ -47,7 +47,7 @@
             container.innerHTML = pages[index].content;
             startTimer(pages[index].time, () => {
                 if (++currentPage < pages.length) loadPage(currentPage);
-                else window.location.href = "baseline.html";
+                else window.location.href = "acclimation.html";
             });
         }
 

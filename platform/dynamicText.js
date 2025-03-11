@@ -1,10 +1,13 @@
 const textElement = document.getElementById("typing-effect");
 const texts = [
+    ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
     "Please set your phone to silent mode and avoid using it.",
     "Adjust your chair to a comfortable position.",
-    "Pick up the headphones from the table and put them on.",
     "Keep an eye on the timer in the top-right corner of the screen.",
     "Submit your task before the timer runs out.",
+    ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+    "Now, please pick up the headphone from the table and put them on.",
+    "and please wait...",
 ];
 
 let textIndex = 0;

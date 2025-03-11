@@ -11,7 +11,7 @@ function timerTemplate() {
 }
 
 const pageTimers = {
-    // acclimation: 150
+    acclimation: 180
     survey1: 150
     baseline: 300,
     task1: 20,

@@ -28,10 +28,10 @@
             { 
                 content: `
                     <h1>Welcome to Optical Illusion Task</h1>
-                    <h2>You will see images on your screen where you will be asked to find patterns.</h2>
-                    ${timerTemplate()}
+                    <h2>You will be shown images on your screen where you will be asked to find patterns.</h2>
+                    <button id="next-button">Next</button>
                 `, 
-                time: 15 
+                time: 0 // No timer for the first page
             },
             ...imagePages.map((img, i) => ({
                 content: `
@@ -72,6 +72,30 @@
             });
         }
 
+        function loadPage(index) {
+            container.innerHTML = pages[index].content;
+
+            // Add event listener for the "Next" button on the first page
+            if (index === 0) {
+                const nextButton = document.getElementById("next-button");
+                nextButton.addEventListener("click", () => {
+                    // Start playing the background audio
+                    const backgroundAudio = document.getElementById("background-audio");
+                    backgroundAudio.play();
+
+                    // Load the next page
+                    currentPage++;
+                    loadPage(currentPage);
+                });
+            } else {
+                // Start the timer for subsequent pages
+                startTimer(pages[index].time, () => {
+                    if (++currentPage < pages.length) loadPage(currentPage);
+                    else window.location.href = "survey2_1.html";
+                });
+            }
+        }
+
         function startTimer(seconds, callback) {
             const timerElement = document.getElementById("timer");
             const progressCircle = document.querySelector(".timer-circle");
@@ -94,17 +118,10 @@
 
         loadPage(currentPage);
     </script>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        let audio = document.createElement("audio");
-        audio.id = "background-audio";
-        audio.src = "audio/40HzBinauralBeats.mp3";
-        audio.autoplay = true;
-        audio.loop = true;
-        document.body.appendChild(audio);
-    });
-</script>
-
+    <!-- Background Audio Element -->
+    <audio id="background-audio" loop>
+        <source src="auditoryBeats/40HzBinauralBeats.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
 </body>
 </html>
